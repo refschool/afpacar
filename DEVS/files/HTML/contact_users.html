@@ -1,0 +1,156 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/contact_users.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/contact_users.js"></script>
+
+
+<div id="section-wrapper" class="container-fluid">
+    <div class="container cont_conteneur-principal">
+
+        <!-- ********************************* TITRE PRINCIPAL DE LA PAGE *********************************-->
+
+        <div class="cont_nous-contacter d-flex col-12">
+            <img src="assets/img/icone-enveloppe.png">
+            <h1>NOUS <strong class="cont_strong">CONTACTER</strong></h1>
+        </div>
+
+        <div class="cont_interligne col-12"></div>
+
+        <div class="row col-12 cont_une-question">
+            <p>Une question ? Une remarque ? N'hésitez pas à nous en faire part.</p>
+        </div>
+
+        <!-- ********************************* FORMULAIRE *********************************-->
+
+        <form method="POST">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                    <div class="col-12 cont_margin-bottom">
+                        <div class="form-floating">
+                            <input type="text" id="cont_inputNom" minlength="2" maxlength="60" pattern="[a-zA-ZÀ-ÿ -]+"
+                                class="comp_form_control_green not-resize form-control cont_margin-top write floatingInput cont_input"
+                                id="floatingInput cont_inputNom" placeholder="Nom" required>
+                            <span class="focus-border"></span>
+                            <label for="cont_inputNom" class="floatingInput">Nom : *</label>
+                            <p class="text-danger cont_hidden" id="texteNom">Veuillez saisir votre nom.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 cont_margin-bottom">
+                        <div class="form-floating">
+                            <input type="text" minlength="2" maxlength="60" pattern="[a-zA-ZÀ-ÿ -]+"
+                                class="comp_form_control_green not-resize  floatingInput form-control cont_input"
+                                id="cont_inputPrenom" placeholder="Prénom" required>
+                            <label for="cont_inputPrenom" class="floatingInput">Prénom : *</label>
+                            <p class="text-danger cont_hidden" id="textePrenom">Veuillez saisir votre prénom.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 cont_margin-bottom">
+                        <div class="form-floating">
+                            <input type="email"
+                                class="comp_form_control_green not-resize form-control floatingInput form-control cont_input"
+                                id="cont_inputEmail" placeholder="Email" name="email" required>
+                            <label for="cont_inputEmail" class="floatingInput">Email : *</label>
+                            <p class="text-danger cont_hidden" id="texteEmail">Veuillez saisir votre email.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+                    <div class="col-12 cont_margin-bottom">
+                        <div class="form-floating">
+                            <textarea name="message" type="text"
+                                class="comp_form_control_green not-resize floatingInput  form-control cont_margin-top cont_message  cont_inputMessage"
+                                id="cont_inputMessage" placeholder="Message" required></textarea>
+                            <label for="cont_inputMessage" class="floatingInput">Message : *</label>
+                            <p class="text-danger cont_hidden" id="texteMessage">Veuillez saisir votre message.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <p>recaptcha</p>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <input type="button" onclick="controleDeSaisie();sendMail()" class="col-4 btn btn_blue" value="ENVOYER">
+                </div>
+            </div>
+        </form>
+        <span id="email-envoye" class="col-6"></span>
+
+        
+
+        <!-- ********************************* CARTE GOOGLE MAPS *********************************-->
+
+
+        <div class="row cont_nous-trouver">
+            <h2>Où nous trouver :</h2>
+        </div>
+
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.0146437152944!2d3.842890615720876!3d43.56457796617439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6b1e78790b019%3A0x5fe2ea1bc7b758d9!2sAFPA!5e0!3m2!1sfr!2sfr!4v1617285570978!5m2!1sfr!2sfr"
+                width="1318" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm12 cont_margin-top">
+                <h4>Coordonnées :</h4>
+                <span class="adresse"></span> <br>
+                <div class="to-hide"><span class="adresse-complement"></span><br></div>
+                <span class="code-postal"></span>
+                <span class="ville"></span><br>
+                <span class="pays"></span><br>
+                <span class="téléphone"></span>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 cont_margin-top">
+                <h4>Horaires :</h4>
+                <p>Du lundi au jeudi : <span class="horaires-semaine"></span><br>Le vendredi : <span
+                        class="horaires-vendredi"></span></p>
+            </div>
+        </div>
+
+        <!-- ********************************* CONTACTS A L'AFPA *********************************-->
+
+
+        <div class="row cont_nous-trouver">
+            <h2>Votre contact à l'AFPA :</h2>
+        </div>
+        <div class="row d-flex">
+
+            <div class="col-6">
+                <span class="contact-afpa"></span><br>
+                <span class="num-contact-afpa"></span>
+            </div>
+            <div class="col-6">
+                <span class="contact-afpa2"></span><br>
+                <span class="num-contact-afpa2"></span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

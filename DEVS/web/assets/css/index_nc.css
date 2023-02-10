@@ -1,0 +1,150 @@
+/* **
+** contenu de page "accueil utilisateur non connecté"
+** */
+
+
+.img-slider{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+
+.bg-green{
+    background: #7fc241;
+}
+
+.carousel-window{
+    position: relative;
+    width: 605px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+}
+
+.slideshow1{
+    position: relative;
+    animation-name: slideshow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+    .comment{
+    width: 300px;
+    height: 300px;
+}
+
+/** 
+<!-- SLOGAN "Choisir AfpaCar" -->
+**/
+
+.choisir
+{
+    margin:60px 0 60px 0;
+}
+
+.choisir img
+{
+    height: 50px;
+    width: 100px;
+}
+
+.choisir h1
+{
+    margin: 0 23px;
+    font-weight: bold;
+}
+
+/**
+<!-- LES 3 logos "sécurité, simplicité, facilité" --> 
+**/
+
+.texte-choisir
+{
+    text-align: center;
+}
+
+.texte-choisir img
+{
+    height: 125px;
+    width: 125px;
+    margin-bottom: 20px;
+}
+/**
+<!-- LES 3 logos "sécurité, simplicité, facilité" --> 
+**/
+
+
+@keyframes slideshow {
+    0%{
+        right:35px; /*frist*/
+    }
+    6.25%{
+        right:35px; /*frist at*/
+    }
+    12.50%{
+        right:340px;
+    }
+    18.75%{
+        right:340px;
+    }
+    25%{
+        right:645px;
+    }
+    31.25%{
+        right:645px;
+    }
+    37.5%{
+        right:945px;
+    }
+    43.75%{
+        right:945px;
+    }
+    50%{
+        right: 1255px;
+    }
+    56.25%{
+        right: 1255px;
+    }
+    62.50%{
+        right:945px;
+    }
+    68.75%{
+        right:945px;
+    }
+    75%{
+        right:645px;
+    }
+    81.25%{
+        right:645px;
+    }
+    87.50%{
+        right:340px;
+    }
+    93.75%{
+        right:340px;
+    }
+    100%{
+        right:35px;
+    }
+}
+
+    @media only screen and (max-width: 768px) {
+    .carousel-window{
+        width: 300px;
+        height: 300px;
+        
+    }
+}
+/* 
+**
+** Formulaire thomas 
+** */
+
+

@@ -1,0 +1,246 @@
+/* **
+** contenu de page "accueil utilisateur non-admin connecté"
+** */
+
+.acc_titre-global
+{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.acc_titre-h2
+{
+    margin-bottom: 30px;
+}
+
+/* petite animation sur les logos FontAwesome */
+.acc_row:hover .acc_anim-logos
+{
+    animation-name: acc_animation;
+    animation-duration: 0.9s;
+}
+
+@keyframes acc_animation
+{
+    0% {transform: rotate(0deg);}
+    33% {transform: rotate(20deg);}
+    66% {transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.acc_couleur-vert
+{
+    color: #7fc241;
+}
+
+.acc_couleur-rose
+{
+    color: #e3007e;
+}
+
+.acc_couleur-bleu
+{
+    color: #00aaff;
+}
+
+.acc_img-roadtrip
+{
+    border-top-right-radius: 15px;
+}
+
+.acc_img-messages
+{
+    border-bottom-right-radius: 15px;
+}
+
+.acc_interligne
+{
+    background-color: #7fc241;
+    height: 5px;
+    margin-bottom: 50px;
+}
+
+/* petite bordure colorée pour le texte */
+.acc_bordure-texte-vert:hover
+{
+    border-bottom: 4px solid #7fc441;
+    padding: 5px;
+}
+
+.acc_bordure-texte-rose:hover
+{
+    border-bottom: 4px solid #e3007e;
+    padding: 5px;
+}
+
+.acc_bordure-texte-bleu:hover
+{
+    border-bottom: 4px solid #00aaff;
+    padding: 5px;
+}
+
+/* Avec ces classes, on met un background coloré qui ne se montre qu'en hover sur les div "acc_contenu */
+.acc_background-color-green:hover
+{
+    background-color: rgba(127,194,65,0.3);
+    transition:all 0.8s;
+}
+
+.acc_background-color-green
+{
+    transition:all 0.8s;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.acc_background-color-pink:hover
+{
+    background-color: rgba(227,0,126,0.3);
+    transition:all 0.8s;
+}
+
+.acc_background-color-pink
+{
+    transition:all 0.8s;
+}
+
+.acc_background-color-blue:hover
+{
+    transition:all 0.8s;
+    background-color: rgba(33,150,243,0.3);
+}
+
+.acc_background-color-blue
+{
+    transition:all 0.8s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.acc_contenu
+{
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding: 0!important;
+    height: 100%!important;
+}
+
+/* Permet de faire un petit effet "bold" sur le contenu des div "acc_contenu" en hover */
+.acc_row:hover h2  
+{
+    font-size: 2.2em!important;
+    transition:all 0.5s;
+}
+
+.acc_row:hover p  
+{
+    font-size: 1em!important;
+    font-weight: bold;
+    transition:all 0.5s;
+}
+
+.acc_div-image
+{
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding: 0!important;
+}
+
+/* En grand écran toutes les div avec cette classe sont invisibles */
+.acc_overlay
+{
+    display: none;
+}
+
+/* On supprime les styles des liens */
+.acc_liens-style
+{
+    text-decoration: none;
+    color: black;
+}
+
+.acc_liens-style:hover
+{
+    color: black;
+}
+
+/* Le style change pas mal en petit écran, notamment l'ordre des div (grâce aux classes "order" dans le html) */
+@media screen and (max-width: 767px)
+{
+    /* On cache toutes les div avec la classe "acc_contenu */
+    .acc_contenu
+    {
+        display: none;
+    }
+
+    .acc_div-image
+    {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    /* Cette classe était masquée précédemment, elle est en d-flex en petit écran */
+    .acc_overlay
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Ici on annule les background qui étaient en hover sur grand écran en les mettant en blanc */
+    .acc_background-color-green, .acc_background-color-pink, .acc_background-color-blue
+    {
+        background-color: white!important;
+    }
+
+    .acc_background-color-green:hover, .acc_background-color-blue:hover, .acc_background-color-pink:hover
+    {
+        background-color: white!important;
+    }
+
+    .acc_liens-style
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .acc_liens-style:hover
+    {
+        color: black;
+    }
+
+    /* petite bordure colorée pour le texte */
+    .acc_bordure-texte-vert:hover
+    {
+        border-bottom: 4px solid #7fc441;
+        padding: 2px;
+    }
+
+    .acc_bordure-texte-rose:hover
+    {
+        border-bottom: 4px solid #e3007e;
+        padding: 2px;
+    }
+
+    .acc_bordure-texte-bleu:hover
+    {
+        border-bottom: 4px solid #00aaff;
+        padding: 2px;
+    }
+
+    /* On met du radius sur tous les coins de toutes les images  */
+
+    .acc_img-roadtrip, .acc_img-profil, .acc_img-messages
+    {
+        border-radius: 15px;
+    }
+
+}

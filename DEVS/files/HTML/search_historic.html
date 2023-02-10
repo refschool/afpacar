@@ -1,0 +1,286 @@
+<!-- link JavaScript -->
+
+<script src="assets/js/search_historic.js"></script>
+
+
+<!-- LIEN css -->
+
+<link rel="stylesheet" type="text/css" href="assets/css/search.css" />
+
+
+
+
+
+
+<!-- div titre rechercher -->
+<div class=" container srch_titre_rechercher d-flex justify-content-center justify-content-lg-start   col-12">
+
+    <div class="">
+        <span> <i class='mt-1 me-2 fas fa-calendar srch_titre_rechercher_icon '></i>Mon Historique de Trajet </span>
+    </div>
+
+</div>
+<div class="container">
+   
+    <!-- Div Template  -->
+    <div id="div_template_resultat" style="display: none;">
+        <fieldset class=" d-flex row flex-column-sm-12 " data-ride="___sIdRide___" data-info="___sIdInfo___">
+            <legend class="srch_date_horaire">___sDate_time___</legend>
+            <!-- DIV 1-->
+
+            <!--  user et avis  -->
+
+            <div class="col-lg-2 d-flex flex-column justify-content-center mb-1">
+                <!-- div image user -->
+                <div class="text-center">
+                    <img class="srch_img_user rounded-circle" src="___sImageFilename___" alt="">
+                    <p style="margin: 0;">___sName___ ___SfirstName___</p>
+                </div>
+                <!-- div icone star -->
+                <div class="d-flex   col-12 ">
+                    <div class=" d-flex col-12 justify-content-center">
+
+
+
+                        <div class="srch_icon_star">
+                            <i class="___star1___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star2___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star3___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star4___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star5___ fa-star"></i>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- DIV 2 Principal-->
+            <!-- trajet + icon bagage fumeur et handicape -->
+            <div class="col-lg-8 d-flex flex-column">
+                <!-- div 2.1 -->
+                <!-- Div icon car +arrow + map -->
+                <div class=" d-flex  justify-content-center col-12 ">
+                    <!-- DIV icon car -->
+                    <div class="col-2 d-flex justify-content-center ">
+                        <div class="srch_div_trajet_icon_car ">
+
+                            <i class="fas fa-car"></i>
+
+                        </div>
+                    </div>
+                    <!-- DIV icon arrow -->
+
+                    <div class="col-8 d-flex justify-content-center">
+                        <div class="srch_div_trajet_icon_arrow text-center">
+
+                            ___Arrow___
+                            <p class="srch_text_trajet text-center">___aller_retour___</p>
+
+                        </div>
+
+
+                    </div>
+                    <!-- DIV icon map -->
+
+                    <div class="col-2 d-flex justify-content-center ">
+                        <div class="srch_div_trajet_icon_map pt-1">
+
+                            <i class="fas fa-map-marker-alt"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- DIV Ville +route + AFPA -->
+                <div class=" d-flex  justify-content-center col-12 ">
+                    <!-- div ville depart /retour -->
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="srch_div_ville_depart">
+                            <p>___sCity___</p>
+                        </div>
+                    </div>
+                    <!-- Div route -->
+                    <div class=" srch_div_route col-8 pt-2 ">
+
+                        <div class="d-flex  ">
+                            <div class="srch_point_arriver  "></div>
+
+                            <div class="srch_route col-6"></div>
+
+                            <div class="srch_point_arriver  "></div>
+                        </div>
+
+                    </div>
+                    <!-- div Afpa map -->
+                    <div class="col-2 d-flex justify-content-center ">
+                        <div class="srch_div_ville_arriver text-center">
+                            <p class="m-0">12 rue </p>
+                            <p class="m-0">Jean Mermoz, Afpa </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Div 2.2 -->
+                <!-- Fumeur handicape bagage et user -->
+                <div class="d-flex col-12 justify-content-center">
+                    <div class=" d-flex  justify-content-center col-6 ">
+                        <!-- DIV icon smoke -->
+                        <div class="col-3 d-flex justify-content-center">
+                            <div class="srch_div_icon_smoke">
+
+                                ___smoking___
+
+                            </div>
+                        </div>
+                        <!-- DIV icon bagage -->
+
+                        <div class=" col-3 d-flex justify-content-center">
+                            <div class="srch_div_icon_bagage">
+
+                                ___sLuggage___
+
+                            </div>
+                        </div>
+                        <!-- DIV icon handicape -->
+
+                        <div class="col-3 d-flex justify-content-center">
+                            <div class="srch_div_icon_handicape">
+
+                                ___sHandic___
+
+                            </div>
+
+                        </div>
+                        <!-- DIV icon user -->
+
+                        <div class="col-3 d-flex flex-column justify-content-center">
+                            <div class="srch_div_icon_user text-center">
+
+                                <i class="fas fa-users"></i>
+
+                            </div>
+                            <div class="srch_div_nb_place text-center">
+                                <p>___iSeats___ Place(s)</p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- DIV 3 -->
+            <!-- type resultat + btn reserver ou modifier+ infos -->
+            <div
+                class=" col-lg-2 d-flex flex-lg-column flex-md-column-12 flex-row-reverse justify-content-between mb-1">
+                <!-- Div 3.1 type resultat -->
+                <div class="  d-flex  justify-content-end align-items-end ">
+                    <div class="srch_div_type">
+                        <p class=" m-0">___sOffer___</p>
+                    </div>
+                </div>
+
+
+                <!-- div 3.2 icon reserver -->
+
+                <div class=" ___classModif___  ms-4 d-flex flex-column   ">
+                    <div class="___sclassReserver___   text-center ">
+                        ___sIconResever___
+                    </div>
+                    <div class=" srch_div_icon_reserver_modif_text text-center">
+                        <div>
+                            <p class=" txt_label m-0">___sTxt_Reserver___</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- div 3.3 icon information -->
+                <div class="  d-flex justify-content-end">
+                    <div class=" d-flex srch_div_icon_info align-items-end">
+                        <i onclick="Modal_Info(___sIdAd___, ___sIboucle___)" class="fas fa-info-circle"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </fieldset>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- ◘MODALE RESERVER◘ -->
+    <div class=" modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">Réservation</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="resultat_modale">
+
+                </div>
+                <div class="modal-body" id="resultat_modale_refus">
+
+                </div>
+                <div class="modal-footer">
+                    <button onclick="book_ok()" type="button" id="btn_modal_confirmer" class="btn btn_blue"
+                        data-bs-dismiss="modal">Confirmer</button>
+                    <button type="button" class="btn btn_pink " id="btn_modal_annuler"
+                        data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn_pink " id="btn_modal_fermer"
+                        data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal INFOS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class=" modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="info_resultat">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn_pink " data-bs-dismiss="modal">Fermer</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- *************************************************************BLOCK RESULTAT ******************************************************************* -->
+
+    <table id="div_tous_les_resultats" width="100%"></table>
+
+
+</div>

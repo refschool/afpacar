@@ -1,0 +1,11 @@
+{
+    "config": {
+        "vendor-dir": "DEVS/modules/vendor/"
+    },
+    "require": {
+        "kint-php/kint": "^3.3",
+        "kktsvetkov/krumo": "^0.4.4",
+        "guillian/afpaconnect-interface": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}

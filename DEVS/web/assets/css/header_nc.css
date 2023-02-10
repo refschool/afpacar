@@ -1,0 +1,178 @@
+/* *
+* Header Not Connected Css 
+* */
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.dropdown button{
+    color: black;
+}
+.dropdown button i{
+    font-size: 190%;
+}
+
+.headerImg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  
+}
+
+.logoheader img{
+    width: 100%;
+    max-width: 130px;
+    min-width: 66px;
+}
+
+.headerImg{
+   
+    margin-left: 3%;
+    margin-right: 3%;
+  
+}
+.topImg{
+    background-color: rgba(255, 255, 255, 0.678);
+    width: 42vw;
+    right: 2vw;
+    height: 100%;
+}
+
+.me-titre{
+    margin-right: 110px;
+}
+
+/* .text-form{
+    margin-left: 100px;
+} */
+
+.form{
+    margin-left: 45px !important;
+    margin-right: 105px !important;
+    border-radius: 20px;
+}
+.transparent_Content{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+/* *
+* Header Global Css 
+* */
+
+
+/* **
+**  formulaire Thomas
+** */
+/* Inputs */
+.reg_form_control
+{
+    margin-bottom: 20px;
+}
+
+.reg_form-control p
+{
+    text-align: left;
+}
+
+/* Fake Captcha img */
+.reg_captcha
+{
+    width: 400px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+/* élements à cacher */
+.reg_hide
+{
+    display: none;
+}
+
+/* Boutons inscription + connexion */
+
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+    color: #fff;
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+}
+
+.eye-btn{
+    top: 11px;
+    right: 5px;
+    z-index: 10;
+} 
+
+
+.btn-check:hover+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+}
+
+.btn-check:focus+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+outline: none !important;
+box-shadow: none !important;   
+}
+
+/* Bouton connexion + valider */
+
+.reg_btn_co{
+    color: #7FC241;
+    border-color: #7FC241;
+}
+
+.reg_btn_insc{
+    color: #7FC241;
+    border-color: #7FC241;
+}
+
+/* Bouton valider */ 
+.btn-primary {
+    color: #fff;
+    background-color: #7FC241 !important;
+    border-color: #7FC241 !important;
+}
+
+.btn-primary:active {
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+    outline: #7FC241 !important;
+    box-shadow: 0 0 0 2px #7FC241  !important;
+}
+
+.btn-primary:focus {
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+    outline: #7FC241 !important;
+    box-shadow: 0 0 0 2px black  !important;
+
+}
+/* Gestion des ombres des inputs */
+.reg_form_control:focus
+{
+    box-shadow: 0 0 0 2px #7FC241  !important;
+    border-color: #7FC241 !important;
+    outline: #7FC241 !important;
+}
+
+@media only screen and (max-width : 1355px){
+    .topImg{
+        display: none !important;
+    } 
+
+    .titre-resp{
+        display: block !important;
+    }
+}
+
+/* **
+** formulaire Thomas
+** */
+
+

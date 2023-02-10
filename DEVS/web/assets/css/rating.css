@@ -1,0 +1,56 @@
+.rat_main_container {
+    border: solid 1px #7fc241;
+    /* height: 350px */
+  }
+  .rat_interlign {
+    border: #7fc241 solid 1px;
+    height: 1px !important;
+    max-width: 65%;
+  }
+  .form-control {
+    resize: none;
+  }
+  
+  .btn_pink {
+    background-color: white !important;
+    color: #e3007e;
+    border: 1px solid #e3007e;
+  }
+  .btn_pink:hover {
+    background-color: #e3007e !important;
+    color: white !important;
+  }
+  
+  .btn_green {
+    background-color: white !important;
+    border: solid 1px #7fc241 !important;
+    color: #7fc241 !important;
+  }
+  .btn_green:hover {
+    background-color: #7fc241 !important;
+    color: whitesmoke !important;
+  }
+  
+  /* bleu */
+  .comp_form_control_blue:focus {
+    box-shadow: 0 0 0 2px #00aaff !important;
+    border-color: #00aaff !important;
+    outline: #00aaff !important;
+  }
+  
+  .comp_form_control_blue {
+    width: 50%;
+  }
+  
+  .comp_form_control_blue:hover:not([disabled]) {
+    box-shadow: 0 0 0 2px #00aaff !important;
+  }
+  
+  .rat_rating {
+    width: 100px;
+  }
+  
+  #note img {
+    width: 80px;
+    height: 80px;
+  }

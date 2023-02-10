@@ -1,0 +1,235 @@
+:root {
+	--color-blue: 		rgba(0, 170, 255, 1);
+	--color-green:		rgba(127, 194, 65, 1);
+	--color-pink:	 	rgba(227, 0, 126, 1);
+	--color-black:		rgba(35, 31, 32, 1);
+	--color-bootstrap:	rgba(0, 123, 255, 1);
+	--color-main:		  var(--color-green);
+}
+
+.prof_main-body {
+    padding: 15px;
+}
+
+/* Titre */
+
+.prof_interligne
+{
+    background-color: #7fc241;
+    height: 5px;
+    margin-bottom:20px;
+}
+.prof_couleur_vert
+{
+    color: var(--color-green);
+}
+
+.prof_info_perso{
+    height: 50px;
+    background-color: #7fc241 !important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    border: 1px solid rgba(0,0,0,.125);
+    color: white;
+    padding-top: 3px;
+}
+
+/* Photo de l'utilisateur + hover */ 
+.prof_contain_img{
+    position: relative;
+    width: 40%;   
+}
+
+.prof_user_img
+{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.prof_middle{
+   transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.prof_contain_img:hover .prof_user_img {
+    opacity: 0.6;
+}
+
+.prof_contain_img:hover .prof_middle {
+    opacity: 1;
+}
+
+.prof_text_img{
+    color: white;
+    font-size: 16px;
+    padding: 16px 16px; 
+}
+
+.prof_icon{
+    padding-top: 8px ;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.prof_card {
+    box-shadow: 4px 6px 3px 2px rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    border-radius: .25rem;
+}
+
+.prof_pw{
+    cursor: pointer;
+    padding-top: 8px;
+    color: var(--color-blue) !important;
+
+}
+
+.prof_textarea{
+    resize: none;
+    height: 145px;
+}
+.prof_form_control:focus{
+    box-shadow: 0 0 0 2px #7FC241  !important;
+    border-color: #7FC241 !important;
+}
+
+.prof_form_control
+{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+
+.fa-star {
+    color: var(--color-green);
+}
+
+.prof_traj{
+    font-size: 25px;
+    font-weight:700;  
+    color: var(--color-green);
+}
+
+.prof_nbr_av{
+    color: var(--color-blue);
+    font-weight: 600;
+}
+
+.prof_temoignage{
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.prof_left_part_bottom{
+    padding-top:20px;
+}
+
+.prof_inp_green{
+    background-color: var(--color-green) !important;
+    color: white !important;
+}
+
+.prof_anciennete{
+    padding-top: 50px;
+}
+
+/* .info_com
+ {
+    margin: auto;
+    padding-bottom: 5%;
+} */
+
+/* Disabled cursor */
+
+.prof_cursor_disabled{
+    cursor: no-drop;
+}
+
+/* Eye showpass */
+
+.form_btn_eye 
+{
+    padding: 10px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 0px ;
+}
+
+
+/* Partie adresse */
+.icon_ad
+{
+    padding-top: 20px ;
+}
+
+.bg-p
+{
+    background-color: rgba(175, 174, 174, 0.849);
+}
+
+.bg-c
+{
+    color: whitesmoke !important;
+}
+
+.add_box
+{
+    box-shadow: 4px 6px 3px 2px rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    border-radius: .25rem;
+    border: 1px solid black !important;
+    padding-bottom: 5%;
+} 
+
+/* bouton enregistrer adresse */
+
+.enregist
+{
+    display: none;
+}
+
+/* ---------test crooping img  --------------*/
+
+label.cabinet{
+	display: block;
+	cursor: pointer;
+}
+
+label.cabinet input.file{
+	position: relative;
+	height: 100%;
+	width: auto;
+	opacity: 0;
+	-moz-opacity: 0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  margin-top:-30px;
+}
+
+#upload-demo{
+	width: 250px;
+	height: 250px;
+  padding-bottom:25px;
+}
+
+.delete_button
+{
+    cursor: pointer;
+}
+
+.modif_button
+{
+    cursor:pointer;
+}
+
+.radio_b
+{
+    float: left;
+}

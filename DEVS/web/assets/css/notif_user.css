@@ -1,0 +1,143 @@
+/* .not_notifications
+{
+    margin-top: 200px;
+} */
+
+/*********************************** STYLE DE LA CLOCHE DE NOTIFS  ************************************/
+/* 
+.not_btn-primary img
+{
+    height: 30px;
+    width: 30px;
+}
+
+.not_btn-primary
+{
+    background-color: white;
+    border-color: white;
+    position: relative;
+}
+
+.not_btn-primary:focus
+{
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+    margin: none;
+}
+
+.not_btn-primary:hover
+{
+    background-color: white;
+    border-color: white;
+} */
+
+ /* cloche de notifications */
+
+ .icon-bell-notification
+ {
+   width: 32px;
+   padding-top: 11px;
+ }
+
+/*********************************** STYLE DU BADGE SUR LA CLOCHE  ************************************/
+
+.not_badge-cloche
+{
+    background-color: #00aaff;
+    border-radius: 9px;
+    color: white;
+    padding: 1px 3px;
+    font-size: 10px;
+    height: 17px;
+    width: 17px;
+    position: absolute; 
+    top: 5;
+    right: -3px;
+    cursor: pointer;
+}
+
+.not_adm_badge-secondary
+{
+    background-color: #00aaff;
+    border-radius: 9px;
+    color: white;
+    padding: 1px 5px;
+    font-size: 13px;
+    width: 19px ;
+    height: 19px ;
+    border: none;
+    margin-left: 6px;
+}
+
+/*********************************** STYLE DU MODAL  ************************************/
+
+
+.not_modal-title
+{
+    margin-left: auto;
+    color: #7fc241;   
+}
+
+/* .not_btn-liens
+{
+    border-radius: 0.25rem;
+    background-color: #00aaff;
+    color: white;
+    border: 1px solid #00aaff;
+    height: 38px;
+    min-width: 204px;
+} */
+
+/* .not_btn-liens:hover
+{
+    background-color: white;
+    color: #00aaff;
+    transition: 1s;
+    border: 1px solid #00aaff;
+
+} */
+
+.not_btn-arrow
+{
+    border: none;
+    background-color: white;
+}
+
+.not_modal-body
+{
+    height: 250px;
+    overflow: auto;
+}
+
+.not_badge
+{
+    background-color: #00aaff!important;
+}
+
+.not_type_selection
+{
+    border: 2px solid transparent;
+    padding: 8px;  
+    margin-top: 5px; 
+    background-color: white;
+}
+
+.not_type_selection.active
+{
+    border: 2px solid #e3007e;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+/*********************************** CORBEILLE DELETE NOTIFICATIONS  ************************************/
+
+#not_bouton_fermer
+{
+    padding-top: 15px;
+    float: right;
+    cursor:pointer;
+    color:rgb(97, 93, 93);
+}

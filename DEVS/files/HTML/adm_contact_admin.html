@@ -1,0 +1,121 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+ 
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/adm_contact_admin.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/adm_contact_admin.js"></script>
+
+<!-- ◘ SUMMERNOTE ◘  -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+<div id="section-wrapper" class="container-fluid">
+	<div class="container cnt_conteneur-principal">
+
+        <!-- **************************************** TITRE PRINCIPAL DE LA PAGE ****************************************-->
+
+        <div class="row">
+            <div class="cnt_modifications d-flex">
+                <img src="assets/img/icone-modification-admin.png" alt="">
+                <h1>Modifications <span>de la page contact</span></h1>
+            </div>
+            <div class="col-12 cnt_interligne"></div>
+        </div>
+
+        <!-- **************************************** PREMIERE PARTIE AVEC CARTE GOOGLE MAPS ****************************************-->
+
+        <div class="row">
+            <div class="cnt_nous-trouver">
+                <h2>Où nous trouver :</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="url" class="comp_form_control_green not-resize form-control cnt_url-map" name="url" id="url" placeholder="https://example.com"
+                pattern="https://.*" size="30" required>
+        </div>
+
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.014643715293!2d3.8428906156661453!3d43.56457796617457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6b1e78790b019%3A0x5fe2ea1bc7b758d9!2sAFPA!5e0!3m2!1sfr!2sfr!4v1617789206593!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+        <!-- **************************************** COORDONNEES ****************************************-->
+
+        <div class="row justify-content-between">
+            <div class="cnt_div-coordonnées">
+                <h2 class="cnt_coordonnées">Coordonnées :</h2>
+                <div id="summernote">
+                    <p>Hello Summernote</p>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#summernote').summernote({
+                            height: 300,
+                        });
+                    });
+                </script>
+            </div>
+
+            <!-- **************************************** HORAIRES ****************************************-->
+            
+            <div class="cnt_div-horaires">
+                <h2 class="cnt_horaires">Horaires :</h2>
+                <div class="summernote">
+                    <p>Hello Summernote</p>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.summernote').summernote({
+                            height: 300,
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- **************************************** VOTRE CONTACT A L'AFPA ****************************************-->
+
+        <div class="row">
+            <div>
+                <h2 class="cnt_nous-trouver">Votre contact à l'AFPA :</h2>
+                <div class="summernote">
+                    <p>Hello Summernote</p>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.summernote').summernote({
+                            height: 300,                        
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- **************************************** BOUTONS ****************************************-->
+
+        <div class="row justify-content-around cnt_boutons">
+            <button class="col-2 btn btn_blue"><b>Aperçu</b></button>
+            <!-- <div class="col-1"></div> -->
+            <button class="col-4 btn btn_pink"><b>Sauvegarder les modifications</b></button>
+            <!-- <div class="col-1"></div> -->
+            <button class="col-4 btn btn_pink"><b>Annuler les modifications</b></button>
+        </div>
+
+
+    </div>
+</div>
+

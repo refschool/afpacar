@@ -1,0 +1,143 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/verification_des_avantage.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/verification_des_avantage.js"></script>
+
+
+<div id="section-wrapper" class="container-fluid">
+    <div id="allPage">
+        <section class="container">
+            <h1 class="text-center fw fw-bold mt-5"><span class="text-pink fw-bold">Liste</span> de <span
+                    class="text-blue">verification</span> des <span class="text-green">avantages</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="table_personnes" class="table table-borddered stripe" width="100%">
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg   ">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h4 class="modal-title  fw-bold me-5 d-flex mx-auto" id="staticBackdropLabel">Liste des
+                                contrat</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body " id="modal_content">
+
+                            <div class="row" >
+                                <div class="form-check d-flex justify-content-center col-6">
+                                    <input class="form-check-input  comp_input-pink" onclick="pricechange()"
+                                        type="checkbox" value="" id="PriceCheck">
+                                    <label class="form-check-label ms-1" for="PriceCheck">
+                                        Prix
+                                    </label>
+                                  
+                                    <div id="priceInput-show">
+                                        <p>
+                                            &nbsp;pour un trajet aller
+                                        </p>
+                                        <input class="mt-3" id="priceInput" onkeyup="onkeyup_update()"  type="text" placeholder="Pour un aller" >€
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-check d-flex justify-content-center col-6">
+                                    <input class="form-check-input comp_input-pink" type="checkbox" onclick="servchange()" 
+                                        id="ServCheck">
+                                    <label class="form-check-label ms-1" for="ServCheck">
+                                        Service
+                                    </label>
+                                    
+                                    <div id="ServInput-show">
+                                        <p>
+                                            &nbsp;pour un trajet aller
+                                        </p>
+                                        <textarea id="service_input" class="mt-3" onkeyup="onkeyup_update()" type="text" rows="1" cols="33"
+                                            placeholder="Je peut prommener ton chien?"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="coment">
+                                <h4 class="text-center">Commentaire supplémentaire</h4>
+                                <div class="d-flex justify-content-center">
+                                    <textarea id="content_add" onkeyup="onkeyup_update()" name="story" rows="5" cols="33"></textarea>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="errMsg text-center">
+                            <b class="text-danger " id="notContratWriter">Le contrat n'a pas étais remplie par le propriétaire de l'annonce!!!</b>
+                            <b class="text-success " id="UserWriter">Le contrat a étais modifier!!!</b>
+                            <b class="text-warning " id="UserWriterUpdate">Le contrat à étais mis à jour !!!</b>
+
+                        </div>
+                        <div class="modal-footer d-flex mx-auto">
+                            <div class="disp-flex mx-auto" id="is_user_writed">
+                                <button type="button" class="btn btn_green me-2" data-bs-dismiss="modal">Envoyer le
+                                    contrat</button>
+
+                                <button type="button" class="ms-2 btn btn_black"
+                                    data-bs-dismiss="modal">Annuler</button>
+                            </div>
+
+                            <div class="disp-flex mx-auto " id="is_user_writed_update">
+                                <button type="button" class="btn btn_green me-2" data-bs-dismiss="modal">Mettre a jour
+                                    le contrat</button>
+
+                                <button type="button" class="ms-2 btn btn_black"
+                                    data-bs-dismiss="modal">Annuler</button>
+                            </div>
+
+                            <div class="disp-flex mx-auto" id="is_user">
+                                <button type="button" class="btn btn_green me-2" data-bs-dismiss="modal">Valider le
+                                    contrat</button>
+
+                                <button type="button" class="btn btn_pink me-2" data-bs-dismiss="modal">Refuser le
+                                    contrat</button>
+
+                                <button type="button" class="ms-2 btn btn_black"
+                                    data-bs-dismiss="modal">Annuler</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    </section>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="modal"></div>
+
+</div>

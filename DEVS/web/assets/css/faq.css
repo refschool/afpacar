@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* on attribue une hauteur nulle à chaque élément de nos sous-menus avec le overflow hidden */
+.sub > li {
+    height: 0;
+    overflow: hidden;
+    border-bottom : 1px solid rgb(127,194,65, 0.5);
+    transition: all 0.25s ease-in-out;
+}
+
+/* on dissimule les input qui permettent de cliquer */
+.faq_checkbox {
+    display: none
+}
+
+/* on affiche les sous-menus lordqu'on a cliqué sur l'input (qu'il est "checked") */
+input:checked + .sub > li {
+    height: auto;
+}
+
+
+.accordion label:hover
+{
+    cursor: pointer;
+}
+
+.accordion 
+{
+    list-style: none;
+    padding: 0;
+}
+
+/* on met un peu d'espace entre les questions */
+.sub
+{
+    padding: 10px 0 10px 0;
+}
+
+/* petit style sur les questions */
+.faq_label
+{
+    width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    padding-left: 5%;
+    display: flex;
+    background-color: #7fc241;
+    align-items: center;
+    font-size: large;
+}
+
+.faq_label:hover
+{
+    background-color:  rgba(127,194,65, 0.7);
+}
+
+/* la flèche vers le bas est un .png */
+.arrow
+{
+    padding: 0 15px 0 5px;
+    width: 8%;
+}
+
+/* un peu d'espace sur le texte des réponses */
+.sub p 
+{
+    padding-left: 30px;
+    font-size: 19px;
+}
+
+.des-questions
+{
+    margin-bottom: 20px;
+}

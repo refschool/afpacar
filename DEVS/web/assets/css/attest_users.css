@@ -1,0 +1,24 @@
+.att_card_user {
+    box-shadow: 4px 6px 3px 2px rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    border-radius: .25rem;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+.att_card_header {
+    background-color: #7fc241;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.att_card_user:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.row>* {
+    padding-right: calc(var(--bs-gutter-x)/ 30);
+    padding-left: calc(var(--bs-gutter-x)/ 30);
+}

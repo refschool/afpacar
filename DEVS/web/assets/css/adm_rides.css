@@ -1,0 +1,47 @@
+
+table.dataTable.no-footer {
+    border: 5px solid #7fc241 !important;
+    border-bottom: 5px solid #7fc241 !important;
+    border-radius: 7px !important;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #7fc2419a !important;
+}
+
+
+
+.pink{
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.green{
+    background-color: var(--color-green);
+    color: whitesmoke;
+}
+
+.blue{
+    background-color:var(--color-blue);
+    color: white;
+}
+.white{
+    background-color:  var(--color-white);
+    border: solid 1px var(--color-green)
+    }
+    .white:hover{
+        background-color: var(--color-green);
+        color: whitesmoke;
+    }
+    .rides_hide
+    {
+        display: none;
+    }
+
+    .input_select_red
+    {
+        display:flex;
+    }

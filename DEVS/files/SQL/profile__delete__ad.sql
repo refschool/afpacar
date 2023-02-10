@@ -1,0 +1,1 @@
+-- dans ma requetes je dois chercher le booleen is_active_adrress , je dois cibler l'id_adresse et je dois mettre le bool a 0 (update machin machin bool=0 pour "delete")

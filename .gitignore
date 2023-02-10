@@ -1,0 +1,7 @@
+DEVS/modules/vendor/
+DEVS/modules/composer.json
+DEVS/modules/composer.lock
+composer.lock
+composer.lock.rej
+package.json
+package-lock.json

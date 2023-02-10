@@ -1,0 +1,26 @@
+◘◘ CRÉATION DES 3 LIENS SYMBOLIQUES (SOUS WINDOWS) ◘◘
+ 
+Il y a 3 liens symboliques à créer, comme ci-dessous, avec :
+$envDir = chemin du dossier de votre Wamp (ex: 'C:\wamp64')
+$projectDir = chemin local de votre projet (ex: 'C:\afpacar'). Correspond à ce que vous avez mis dans le champ 'destination' dans sourcetree.
+
+Remplacer '$envDir' et '$projectDir' par vos chemins respectifs.
+
+Si vous n'avez pas de dossiers "files" ni de dossier "modules" dans $envDir, vous devez les créer.
+
+Sous Windows, lancer l'invite de commandes en mode administrateur (en tapant "cmd" à droite du menu démarrer)
+Taper les 3 lignes dans l'invite de commandes et appuyer sur entrée.
+Si tout s'est bien passé vous devriez voir les raccourcis créés dans votre environnement, qui pointent vers votre dossier de projet ☻
+
+Si vous êtes sous Mamp, particularité pour le premier lien symbolique :
+"$envDir\www" est à remplacer par "$envDir\htdocs".
+
+mklink /D $envDir\www\afpacar $projectDir\DEVS\web
+mklink /D $envDir\files\afpacar $projectDir\DEVS\files
+mklink /D $envDir\modules\afpacar $projectDir\DEVS\modules
+
+
+• exemple :
+mklink /D C:\wamp64\www\afpacar C:\afpacar\DEVS\web
+mklink /D C:\wamp64\files\afpacar C:\afpacar\DEVS\files
+mklink /D C:\wamp64\modules\afpacar C:\afpacar\DEVS\modules

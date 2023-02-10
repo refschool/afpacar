@@ -1,0 +1,105 @@
+
+
+/* COULEURS:
+Bleu: #00aaff
+Rose: #e3007e
+Vert: #7fc241
+Noir: #231f20 */
+
+/* le ":not([type=submit])" permet d'écarter les input dont le type est submit. Le ":valid" cible ceux qui sont valid par rapport au pattern.*/
+.cont_input:not([type=submit]):valid {
+    background: rgba(33, 220, 92, 0.1);
+}
+
+.cont_input:not([type=submit]):invalid {
+    background-color: rgb(255, 86, 86);
+}
+
+/* la pseudo-classe "placeholder-shown" permet de cibler les input dont le placeholder est actuellement affiché */
+.cont_input:not([type=submit]):placeholder-shown
+{
+    background-color: white;
+}
+
+/***************** NOUS CONTACTER *****************/
+
+.cont_nous-contacter img
+{
+    width: 100px;
+}
+
+.cont_nous-contacter h1
+{
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.cont_interligne
+{
+    height: 5px;
+    background-color: #7fc241;
+    margin-bottom: 10px;
+}
+
+.cont_strong
+{
+    color :#7fc241
+}
+
+/***************** FORMULAIRE DE CONTACT *****************/
+
+.cont_conteneur-principal
+{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 0px 30px 10px 30px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 15px;
+}
+
+.cont_une-question
+{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.cont_margin-bottom
+{
+    margin-bottom: 30px;
+}
+
+.cont_margin-top
+{
+    margin-top: 10px;
+}
+
+.cont_message
+{
+    height: 234px!important;
+}
+
+.cont_hidden
+{
+    display: none;
+}
+
+/***************** OU NOUS TROUVER *****************/
+
+.cont_nous-trouver
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #7fc241;
+    color: white;
+    text-align: center;
+    /* border: 2px solid #231f20; */
+    padding: 7px;
+}
+
+@media screen and (max-width: 575px)
+{
+    .cont_conteneur-principal
+    {
+        border: none;
+    }
+}

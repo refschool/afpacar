@@ -1,0 +1,392 @@
+.srch_div_formulaire {
+  border: 2px solid #7FC241;
+  background-color: #faf8f8;
+  height: auto;
+  border-radius: 10px;
+}
+
+.srch_input {
+  margin-top: 3%;
+  text-align: center;
+  outline: 0;
+  width: 100% !important;
+}
+
+.srch_div_checkbox {
+  margin-top: 10px;
+}
+
+
+
+/* Position bouton radio */
+
+.srch_div_checkbox_position {
+  padding: 1%;
+}
+
+/*Position du text par rapport au bouton*/
+
+.srch_div_checkbox_position p {
+  text-align: center;
+  margin: 0;
+}
+
+/* titre rechercher */
+
+.srch_titre_rechercher {
+  font-size: 20px;
+}
+
+/* icone titre rechercher */
+
+.srch_titre_rechercher_icon {
+  font-size: 20px;
+  color: #7FC241;
+}
+
+/* icon checkbox */
+
+.srch_icon_checkbox {
+  color: #7FC241;
+  margin-bottom: 2px;
+}
+
+/* bouton rechercher */
+
+.btn_green {
+  margin: 20% 0 20% 0;
+  
+  font-size: 20px;
+}
+
+/* titre icon trajet */
+
+.srch_icon_titre_trajet {
+  color: #7FC241;
+}
+
+/* titre section */
+
+.srch_titre_section {
+  font-size: 20px;
+}
+
+/*Contenue resultat */
+
+fieldset {
+  border-radius: 8px;
+  border: 2px solid rgba(227, 0, 126, 1) !important;
+}
+
+/* titre resultat */
+
+legend {
+  float: none !important;
+  width: auto !important;
+  text-align: center !important;
+  font-size: 18px;
+}
+
+/* image user */
+
+.srch_img_user {
+  width: auto;
+  max-height: 100px;
+}
+
+/* icon star */
+
+.srch_icon_star i {
+  color: rgba(255, 255, 0, 0.863);
+  font-size: 15px;
+}
+
+/* icon car */
+
+.srch_div_trajet_icon_car {
+  font-size: 35px;
+  color: #7FC241;
+  padding-top: 15px !important;
+}
+
+/* icon fleche */
+
+.srch_div_trajet_icon_arrow {
+  font-size: 30px;
+  color: rgba(227, 0, 126, 1);
+  padding-top: 10px !important;
+}
+/* police text aller et retour */
+.srch_text_trajet{
+  color: rgba(227, 0, 126, 1);
+  font-size: 15px;
+  margin: 0px;
+}
+
+/* icon map */
+
+.srch_div_trajet_icon_map {
+  font-size: 30px;
+  color: #7FC241;
+  padding-top: 15px !important;
+}
+
+/* ville depart */
+
+.srch_div_ville_depart {
+  font-size: 15px;
+}
+
+/* ville arriver */
+
+.srch_div_ville_arriver {
+  font-size: 15px;
+}
+
+/* icon smoke resultat */
+
+.srch_div_icon_smoke {
+  font-size: 20px;
+  color: #7FC241;
+}
+
+/* icon handicape resultat */
+
+.srch_div_icon_handicape {
+  font-size: 20px;
+  color: #7FC241;
+}
+
+/* icon bagage resultat */
+
+.srch_div_icon_bagage {
+  font-size: 20px;
+  color: #7FC241;
+}
+
+/* icon user resultat */
+
+.srch_div_icon_user {
+  font-size: 20px;
+  color: #7FC241;
+}
+
+/*nombre de places textes */
+
+.srch_div_nb_place {
+  font-size: 13px;
+}
+
+/* point depart/arriver */
+
+.srch_point_arriver {
+  box-sizing: border-box;
+  height: 15px;
+  background-color: red;
+  border: 2px solid rgb(5, 71, 82);
+  border-radius: 50%;
+  padding-left: 10px;
+}
+
+/* route qui fait depart vers afpa */
+
+.srch_route {
+  padding-top: 5px;
+  width: 95%;
+  height: 5px;
+  border-bottom: 3px solid black;
+}
+
+/* div type annonce */
+
+.srch_div_type {
+  font-size: 15px;
+}
+
+/* div text reserver ou modifier  */
+
+.srch_div_icon_reserver_modif_text {
+  font-size: 15px;
+}
+
+/* icon reserver */
+
+.srch_div_icon_reserver {
+  font-size: 50px;
+  color: #7FC241;
+}
+
+/* icon modifier */
+
+.srch_div_icon_modif {
+  font-size: 35px;
+  color: #7FC241;
+}
+
+/* icon information */
+
+.srch_div_icon_info {
+  font-size: 20px;
+  color: #7FC241;
+}
+/* total div modif pour quil soit center au responsive */
+.srch_div_modif_total{
+  padding-left: 35px!important;
+}
+/* ◘DATATABLE◘ */
+table.dataTable thead td {
+  border-bottom:2px solid #7FC241  ;
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  /* *************DIV FORMULAIRE***************** */
+  /* ******************************************** */
+  /* bouton checkbox div formulaire */
+  .srch_div_checkbox_position {
+    margin: 0px 10px;
+  }
+  /*taille du titre */
+  .srch_titre_rechercher {
+    font-size: 6vw;
+  }
+  /* taille icone rechercher */
+  .srch_titre_rechercher_icon {
+    font-size: 6vw;
+  }
+  /* police de la div formulaire */
+  .srch_police_checkbox {
+    font-size: 12px;
+  }
+  #srch_input {
+    font-size: 12px;
+  }
+  /* bouton rechercher */
+  .btn-pink {
+    font-size: 11px;
+  }
+  /***** bouton toggle ******/
+  /**************************/
+  .srch_switch {
+    width: 40px;
+    height: 23px;
+  }
+  .srch_slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 3px;
+    bottom: 3px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    background-color: #00aaff;
+  }
+  input:checked+.srch_slider:before {
+    transform: translateX(17px);
+    background-color: white;
+  }
+  /* **************** */
+  /***************** DIV RESULTAT *****************/
+  /* ******************************************** */
+  /* DIV 1 */
+  /* titre section */
+  .srch_titre_section {
+    font-size: 17px;
+  }
+  /* Legende heure et date */
+  .srch_date_horaire {
+    font-size: 5vw;
+  }
+  /* taille image user */
+  .srch_img_user {
+    width: 35%;
+    max-height: 60px;
+  }
+  /* taille  icon avis  */
+  .srch_icon_star i {
+    font-size: 10px;
+  }
+  /* DIV 2 */
+  /* icon voiture */
+  .srch_div_trajet_icon_car {
+    font-size: 20px;
+  }
+  /* icon arrow */
+  .srch_div_trajet_icon_arrow {
+    font-size: 30px;
+  }
+  /* icon map */
+  .srch_div_trajet_icon_map {
+    font-size: 20px;
+  }
+  /* div ou se trouve la route  */
+  .srch_div_route {
+    padding-top: 3px !important;
+  }
+  /* route  */
+  .srch_route {
+    padding-top: 5px;
+    width: 80%;
+    height: 5px;
+    border-bottom: 3px solid black;
+  }
+
+  /* police text aller et retour */
+.srch_text_trajet{
+  font-size: 11px;
+}
+  /* ville de depart */
+  .srch_div_ville_depart {
+    font-size: 12px;
+  }
+  /* ville d'arriver */
+  .srch_div_ville_arriver {
+    font-size: 12px;
+  }
+  /* point depart/arriver */
+  .srch_div_nb_place p {
+    font-size: 9px;
+  }
+  /* icon bagage fumeur handicape et palces */
+  .srch_div_icon_bagage, .srch_div_icon_smoke, .srch_div_icon_handicape, .srch_div_icon_user {
+    font-size: 15px;
+    margin: 0px 10px;
+  }
+  /* DIV 3 */
+  /* Ionc reserver */
+  .srch_div_icon_reserver {
+    font-size: 30px;
+  }
+  /* icon modifier */
+  .srch_div_icon_modif {
+    font-size: 30px;
+    padding-left: 100px !important ;
+
+  }
+  /* taille text div reserver */
+  .srch_div_icon_reserver_modif_text {
+    font-size: 3vw;
+  }
+  /* div type offre ou demande */
+  .srch_div_type {
+    font-size: 3vw;
+  }
+  /* icon information */
+  .srch_div_icon_info {
+    font-size: 15px;
+  }
+  
+}
+/* function Showpass() {
+            if ($('.ShowPass').hasClass("fa-eye-slash")) {
+                $('.ShowPass').removeClass("fa-eye-slash").addClass("fa-eye")
+                $("[name='password']").attr("type", "text");
+            } else {
+                $('.ShowPass').removeClass("fa-eye").addClass("fa-eye-slash")
+                $("[name='password']").attr("type", "password");
+            }
+        } */

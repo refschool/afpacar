@@ -1,0 +1,103 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+<!-- ◘ CSS ◘ -->
+<!-- <link rel="stylesheet" href="assets/css/notif_user.css" /> -->
+<link rel="stylesheet" href="assets/css/faq.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/faq.js"></script>
+<!-- <script type="text/javascript" src="assets/js/notif_user.js"></script> -->
+<!--◘ SECTION ◘  -->
+
+ <!-- <span class="not_badge-cloche notif_numero_total" onclick="notif_nombreType();notif_check_array() " data-bs-toggle="modal" data-bs-target="#exampleModal"></span> -->
+<div id="section-wrapper" class="container mt-5">
+
+  <div class="row d-flex">
+    <div class="des-questions col-lg-6 col-sm-12">
+      <h3><strong>Des questions ? Besoin de renseignements ? Consultez notre FAQ.</strong></h3>
+    </div>
+
+   
+
+  <!-- il s'agit ici d'une div vide qui servira a accueillir le contenu de la div suivante qui elle sera remplie grâce au JS -->
+    <div class="col-lg-6 col-sm12" id="container_faq"></div>
+
+    <!-- cette div est en "display:none" car elle est cachée. Elle sert de modèle à remplir et à générer autant de fois que désiré grâce au JS. Une fois qu'elle est remplie, elle est injectée dans la div au dessus qui elle sera visible.  -->
+    <div id="template_faq" style="display: none;">
+
+      <div class="conteneur-accordeon">
+        <ul class="accordion">
+          <li class="has-sub">
+            <label class="justify-content-between faq_label" for="menu_%id_faq%"><strong><span
+                  id="question_%id_faq%"></span></strong><img class="arrow" src="assets/img/Down-Arrow.png"
+                alt="down-arrow">
+            </label>
+            <input class="faq_checkbox" id="menu_%id_faq%" type="checkbox" name="menu" />
+            <ul class="sub">
+              <li>
+                <p id="reponse_%id_faq%"></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+      <div class="modal-content ">
+          <div class="modal-header ">
+              <h5 class="not_modal-title" id="exampleModalLabel" onclick="notif_nombreType()">Notifications</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="d-flex justify-content-around">
+              <button onclick="not_triMessages()" class=" not_type_selection not_messages" ><b>Messages : <span class="badge not_badge bg-secondary not_nombre_messages">1</span></b></button>
+
+              <button onclick="not_triNotes()" class="not_type_selection not_notes " ><b>Notes : <span class="badge not_badge bg-secondary not_nombre-notes">1</span></b></button>
+
+              <button onclick="not_triAvis()" class=" not_type_selection not_avis"><b>Avis : <span class="badge not_badge bg-secondary not_nombre-avis" >1</span></b></button>
+              <span id="not_bouton_fermer"><i class="fas fa-eye" title="J'ai vu cette notification" onclick="notif_deleteNotification()"></i></span>
+          </div>
+          
+          <!-- <i class="fas fa-check-square"></i> -->
+          <!-- <i class="far fa-eye"></i> -->
+          <!-- <i class="fas fa-trash-alt"></i> -->
+
+          <div class="modal-body not_modal-body">
+              <!-- <span class="not_non-lu">Vous avez <b><span class="not_nombre-type-notifs"></span></b> <span class="not_type-notifs"></span></span> -->
+              
+              <div id="notif_contenu"></div>
+          </div>
+          
+          <div class="modal-footer justify-content-around">
+
+              <span class="not_nombre-notifs"><b><span id="notif_numero_encours"></span>/<span class="notif_numero_total"></span></b></span>
+              <div><button onclick="notif_previous()" class="not_btn-arrow"><i class="fas not_fas fa-arrow-left"></i></button>
+              <button onclick="notif_next()" class="not_btn-arrow "><i class="fas not_fas fa-arrow-right"></i></button>
+              </div>
+
+              <button type="button" class="d-none not_btn-liens btn btn_blue" data-type="not_messages">Voir tous mes messages</button>
+
+              <button class="d-none not_btn-liens btn btn_blue" data-type="not_notes">Voir toutes mes notes</button>
+
+              <button class="d-none not_btn-liens btn btn_blue" data-type="not_avis">Voir tous mes avis</button>
+
+              <button type="button" class="btn btn_pink" data-bs-dismiss="modal">Fermer</button>
+                                  
+          </div>
+      </div>
+  </div>
+</div>

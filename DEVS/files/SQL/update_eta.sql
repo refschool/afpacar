@@ -1,0 +1,1 @@
+UPDATE `user` SET `is_active_user`= @eta WHERE  id_user = @user_id

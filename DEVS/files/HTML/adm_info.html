@@ -1,0 +1,94 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+   
+
+
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/lib/summernote/summernote.css">
+<link rel="stylesheet" href="assets/css/adm_info.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/lib/summernote/summernote.js"></script>
+<script type="text/javascript" src="assets/js/adm_info.js"></script>
+
+<div id="section-wrapper" class="container-fluid">
+	<table id="resulat"></table>
+	<div class="container">
+		<div class="row">
+			<div class="haut_de_page">
+				<h1> <span>EDITION</span> DES INFORMATIONS LEGALES / CHARTES</h1>
+				<p id="errtest" class="hide">tu a tout cassé</p>
+			</div>
+		</div>
+		<table class="table table-hover" id="table_personnes">
+
+		</table>
+
+		<!-- Button trigger modal -->
+<button id='addInfo_button' type="button" class="btn green" data-bs-toggle="modal" data-bs-target="#myLargeModalLabel" onclick="">
+	Ajouter
+  </button>
+  
+  <!-- Modal -->
+  <div id="myLargeModalLabel" class="modal fade bd-example-modal-lg" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div style="min-height: 200px" class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Editeur</h5>
+		  <label for="modal-title-content"></label>
+			<input type="text" id="modal-title-content" name="modal-title-content">
+
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<textarea id="summernote" name="summernote" class="summernote"></textarea>
+					</div>
+					<div class="modal-footer">
+						<!-- // Mettre un attribut pour définir la fonction du bouton (ajouter, ou modifier) => data-info-action :edit -->
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+						<button type="button" data-info-action='add_info' class="btn green" onclick="addInfo()"
+							data-bs-dismiss="modal">Valider</button>
+						<button type="button" data-info-action='edit_info' class="btn green" 
+							data-bs-dismiss="modal">Mettre à jour</button>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" tabindex="-1" id="modalSupp">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Supprimer</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+							onclick="$('#modalSupp').hide()"></button>
+					</div>
+					<div class="modal-body">
+						<p>Etes-vous sûr de vouloir supprimer cette ligne ?</p>
+					</div>
+					<input type="hidden" name="id_vehiculo_del_modal" id="id_vehiculo_del_modal">
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+							onclick="$('#modalSupp').hide()">Retour</button>
+						<button type="button" class="btn btn-primary" onClick="suppInfo(iIndiceToPage)" data-bs-dismiss="modal">Supprimer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		$('#summernote').summernote();
+	});
+</script>

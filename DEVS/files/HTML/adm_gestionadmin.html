@@ -1,0 +1,157 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/adm_gestionadmin.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/adm_gestionadmin.js"></script>
+<script type="text/javascript" src="assets/js/utils.js"></script>
+
+
+
+<div id="section-wrapper" class="container-fluid">
+    <div id="allPage">
+        <section class="container">
+            <h1 class="text-center mt-5"><b><span class="adm_userstext-pink">Liste</span> des utilisateur <span class="adm_userstext-pink">administrateur</span></b></h1>
+            <div class="newAdmin d-flex justify-content-end">
+
+                <b for="btn">Ajouter un administrateur &nbsp</b>
+                <button type="button" class="btn adm_usersbtn-blue mb-2 text-light" onclick="videInput(), show_modal()" >
+                    Nouvel administrateur
+                </button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="table_user_admin" class="table table-borddered stripe acs table-hover dataTable no-footer responsive" width="100%">
+                        </table>
+                        <!-- <table id="table_user_admin" class="table table-borddered stripe" width="100%">
+                        </table> -->
+                    </div>
+                </div>
+            </div>
+           
+            <div class="modal fade" id="reg_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+            
+            
+                        <div class="container text-center pb-5 pt-5" id="reg_modal_code_script">
+                            <!-- Bouton connexion + inscription -->
+                            <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons">
+                                <input type="radio" class="btn-check reg_btn_co " name="options-outlined" id="success-outlined"
+                                    autocomplete="off"checked>
+                                <label class="btn btn-outline-success" for="danger-outlined">INSCRIPTION</label>
+                            </div>
+                        </div>
+                
+                        <div class="modal-header" id="form-header-script">
+                            <h5 class="modal-title">Formulaire d'inscription</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+            
+                    </div>
+                    <div class="modal-body">
+                
+            
+            
+            
+                        <div class="" id="reg_benef_ok">
+                            <p class=""> Prénom : </p>
+                            <input type="text" class="reg_form_control form-control" id="reg_inp_prenom"
+                                placeholder="Prénom">
+                            <p class=""> Nom : </p>
+                            <input type="text" class="reg_form_control form-control" id="reg_inp_nom"
+                                placeholder="Nom">
+                                <p class=""> mot de passe provisoir : </p>
+                                <input type="password" name='password'
+                                class="reg_form_control comp_form_control_green not-resize form-control border-right-0 reg_input_field mb-1"
+                                id="reg_inp_pw" placeholder="Mot de passe">
+                                <span class="input-group-append bg-white" id="eye">
+                                    <div class="eye-btn position-absolute" onClick="Showpass()" type="button">
+                                        <i class="fas fa-eye-slash ShowPass"></i>
+                                    </div>
+                                </span>
+                                
+                                <div class="text-center row mb-5">
+                                    <div class="col-6">
+                                        <p>Selectionner un rôle</p>
+                                        <select class="input_select mx-auto  input_select_green" id="reg_inp_select_role" >
+                                            <option value="selection" selected="" disabled="">-- choisir un rôle --</option>
+                                            <option value="ROLE_USER">Utilisateur</option>
+                                            <option value="ROLE_ADMIN">Admin</option>
+                                            <option value="ROLE_SUPER_ADMIN">Super Admin</option>
+                                        </select>
+                                    </div>
+                                   <div class="col-6">
+                                        <p>Selectionner une fonction</p>
+                                        <select class="input_select mx-auto  input_select_green" id="reg_inp_select_function" >
+                                            <option value="selection" selected="" disabled="">-- choisir un rôle --</option>
+                                            <option value="STAGIAIRE">Stagiaire</option>
+                                            <option value="FORMATEUR">Formateur</option>
+                                            <option value="EMPLOYE_AFPA">Employé Afpa</option>
+                                        </select>
+                                   </div>
+                                   
+                                </div>
+                            <div class="form-check">
+                                <p class="text-center"><a  href="#">conditions générales d'utilisation</a></p>
+                                <input class="form-check-input" type="checkbox" value="" id="reg_inp_checked">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    J'ai lu et accepte les conditions générales d'utilisation du site
+                                </label>
+                            </div>
+                            <div><img class="mt-3 adm_usersimg-fluid reg_captcha" src="assets/img/captcha.png"></div>
+            
+                        </div>
+            
+            
+            
+            
+            
+            
+                          <!-- input code bénéficiaire + bouton valider -->
+                        <div class="container col-lg-12"  id="reg_sec_inscription">
+                            <p class="text-center"> Veuillez indiquer votre code bénéficiaire ou votre email : </p>
+                            <input type="text" class="reg_form_control  form-control " id="reg_inp_benef" placeholder=" code bénéficiaire ">
+                            <p id="reg_benef_invalid" class="reg_hide text-center text-danger">Le code bénéficiaire ou email est incorrect.</p>
+                            <button type="button" onClick="check_code_bene()" class="btn btn-primary reg_btn_benef d-block mx-auto">Valider</button>
+                        </div>
+            
+            
+            
+                    </div>
+                    <div class="modal-footer" id="footer-modal">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" onclick="newAdmin()" data-bs-dismiss="modal" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+        </section>
+
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Modal -->
+    <div id="modal"></div>
+</div>
+

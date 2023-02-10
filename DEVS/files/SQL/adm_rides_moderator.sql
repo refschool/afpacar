@@ -1,0 +1,1 @@
+UPDATE ad SET status_report_ad=@status_report_ad, subject_report_ad="@subject_report_ad" where id_ad=@id_ad;

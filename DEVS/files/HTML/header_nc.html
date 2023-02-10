@@ -1,0 +1,227 @@
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/header_nc.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/header_nc.js"></script>
+<script type="text/javascript" src="assets/js/app_temp_login.js"></script>
+
+
+
+<!-- div hearder page -->
+<div id='header-wrapper' class='nc'>
+    <div class="container-fluid ps-4 pe-4">
+        <div class="row">
+            <!-- div logo afpaCar -->
+            <div class="col-2 logoheader">
+                <img src="assets/img/logoafpacar_small.png" alt="logo afpaCar">
+            </div>
+            <!-- div Titre header -->
+            <div class="col-6 mt-4  text-center">
+                <h1>Covoiturez en toute liberté</h1>
+            </div>
+            <!-- div logo afpa -->
+            <div class="col-2 logoheader text-end">
+                <img src="assets/img/logo-afpa_small.png" alt="logo afpa">
+            </div>
+            <!-- div bouton logo connecter -->
+            <div class="col-2 mt-4 d-flex justify-content-end">
+                <div class="dropdown">
+                    <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Connexion / Inscription</a></li>
+                        <li><a class="dropdown-item">--------------</a></li>
+                        <li class="dropdown-item temp_fct button" data-action='simulateNonAdminConnexion'>Simuler connexion utilisateur (provisoire)</li>
+                        <li class="dropdown-item temp_fct button" data-action='simulateAdminConnexion'>Simuler connexion administrateur (provisoire)</li>
+                        <li class="dropdown-item temp_fct button" data-action='simulateAdminConnexionWithUserMode'>Simuler connexion admin mode utilisateur (provisoire)</li>
+                        <li><a class="dropdown-item">--------------</a></li>
+                        <?php
+                            if ( App::isLocalhost() ) {
+                                echo '<li><a class="dropdown-item" href="app_dev">Page Développeur</a></li>';
+                            }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- image header transparent Petit écran -->
+    <div class="container-fluid mt-5 position-relative p-0">
+        <div class="headerImg ">
+            <div class="d-md-block titre-resp d-lg-block d-sm-block d-block d-xl-none">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <h1 class='text-center h2 '><span class="text-pink"><b>Besoin</b></span> d'être <span
+                                class="text-pink"><b>transporté </span>? Un </b> <span class="text-pink"><b>trajet</b>
+                            </span>à proposer ?
+                        </h1>
+                        <!-- <div class="">
+                <b class="h4 fx-bold">Afpa Car met en <span class="text-pink"><b>relation</b></span> tous les stagiaires et les professionnels de l'Afpa. Gérez vos trajets, vos véhicule, les place disponibles et <span class="text-pink"><b>partagez</b></span>  vos avis avec la <span class="text-pink"><b>communauté</b></span>!</b>
+                </div> -->
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- image header transparent Grand écran -->
+
+            <div class="topImg d-md-none d-lg-none d-sm-none d-none d-xl-block position-absolute">
+                <div class="text-form mt-3 me-3">
+                    <h1 class=' h1 ms-5'><span class="text-pink"><b>Besoin</b></span><b> d'être </b><span
+                            class="text-pink"><b>transporté </b></span><b>?</b><br><b> Un </b><span
+                            class="text-pink"><b>trajet</b></span><b> à proposer ?</b>
+                    </h1>
+                </div>
+                <div class="ms-5 me-titre">
+                    <b class="h4 fx-bold">Afpa Car met en <span class="text-pink"><b>relation</b></span> tous les stagiaires
+                        et les professionnels de l'Afpa. Gérez vos trajets, vos véhicules, les places disponibles et <span
+                            class="text-pink"><b>partagez</b></span> vos avis avec la <span
+                            class="text-pink"><b>communauté</b></span>!</b>
+                </div>
+                <div class="form bg-light mt-3 mb-5 d-bolck justify-content-center">
+
+
+                    <div class="pb-4">
+                        <div class="container text-center pb-3 pt-3">
+                            <!-- Bouton connexion + inscription -->
+                            <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons">
+                                <input type="radio" class="btn-check  reg_btn_co " name="options-outlined"
+                                    id="success-outlined" autocomplete="off" onClick="reg_show_connexion()" checked>
+                                <label class="btn btn-outline-success reg_btn_co" for="success-outlined">CONNEXION</label>
+                                <input type="radio" class="btn-check reg_btn_insc" name="options-outlined"
+                                    id="danger-outlined" autocomplete="off" onClick="reg_show_insc()">
+                                <label class="btn btn-outline-success reg_btn_insc" for="danger-outlined">INSCRIPTION</label>
+                            </div>
+                        </div>
+
+                        <!-- Section Connexion apparaissant de base ou après avoir cliqué sur "Connexion" -->
+                        <div class="container col-lg-10 col-md-6 pb-3 col-8" id="reg_sec_connexion">
+                            <p class="text-left"> Veuillez indiquer votre email ou votre code bénéficiaire : </p>
+                            <input type="email" class="reg_form_control comp_form_control_green not-resize form-control  " id="reg_inp_mail"
+                                placeholder="Email ou Code bénéficiaire">
+                            <p> Mot de passe : </p>
+                            <div class="input-group">
+                                <input type="password" name='password'
+                                    class="reg_form_control comp_form_control_green not-resize form-control border-right-0 reg_input_field mb-1"
+                                    id="reg_inp_pw" placeholder="Mot de passe">
+                                <span class="input-group-append bg-white">
+                                    <div class="eye-btn position-absolute" onClick="Showpass()" type="button">
+                                        <i class="fas fa-eye-slash ShowPass"></i>
+                                    </div>
+                                </span>
+                            </div>
+                            <a class="text-center d-block mb-2" data-bs-toggle="modal" onclick="reg_show_fgt_pwd()"
+                                data-bs-target="#reg_modal">Mot de passe
+                                oublié?</a>
+                            <button type="button" onClick="" class="btn btn-primary reg_btn_benef d-block mx-auto">Valider</button>
+
+
+
+                        </div>
+
+                        <!-- Modal mdp oublié + Inscription -->
+
+                        <div class="modal" id="reg_modal" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <!-- Partie modal mot de passe oublié -->
+                                    <div id="reg_modal_forget_pw">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Récupération de mot de passe</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Entrez votre email pour récupérer votre mot de passe.</p>
+                                            <input type="email" class="reg_form_control comp_form_control_green not-resize form-control"
+                                                id="reg_inp_forget_pw" placeholder="Email">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fermer</button>
+                                            <button type="button" class="btn btn-primary">Envoyer</button>
+                                        </div>
+                                    </div>
+                                    <!-- Partie modal inscription -->
+                                    <div id="reg_modal_inscript" class="reg_hide ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Formulaire d'inscription</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="" id="reg_benef_ok">
+                                                <p class=""> Prénom : </p>
+                                                <input type="text" class="reg_form_control comp_form_control_green not-resize form-control" id="reg_inp_prenom"
+                                                    placeholder="Prénom">
+                                                <p class=""> Nom : </p>
+                                                <input type="text" class="reg_form_control comp_form_control_green not-resize form-control" id="reg_inp_nom"
+                                                    placeholder="Nom">
+                                                <p class=""> Votre mot de passe habituel des services Afpa : </p>
+                                                <div class="input-group">
+                                                    <input type="password" name='password'
+                                                        class="reg_form_control comp_form_control_green not-resize form-control border-right-0 reg_input_field"
+                                                        id="reg_inp_pw" placeholder="Mot de passe">
+                                                    <span class="input-group-append bg-white">
+                                                        <div class="eye-btn position-absolute" onClick="Showpass()"
+                                                            type="button">
+                                                            <i class="fas fa-eye-slash ShowPass"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        J'ai lu et accepte les conditions générales d'utilisation du site
+                                                    </label>
+                                                </div>
+                                                <div><img class="mt-3 img-fluid reg_captcha" src="assets/img/captcha.png">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fermer</button>
+                                            <button type="button" class="btn btn-primary">S'inscrire</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <!-- input code bénéficiaire + bouton valider -->
+                    <div class="container col-lg-10 col-md-6 col-8 reg_hide" id="reg_sec_inscription">
+                        <p class="text-left"> Veuillez indiquer votre code bénéficiaire : </p>
+                        <input type="number" class="reg_form_control comp_form_control_green not-resize form-control " id="reg_inp_benef"
+                            placeholder="Code bénéficiaire">
+                        <p id="reg_benef_invalid" class="reg_hide text-danger">Le code bénéficiaire est incorrect.</p>
+                        <button type="button" onClick="reg_code_benef()"
+                            class="btn btn-primary reg_btn_benef d-block mx-auto" data-bs-toggle="modal"
+                            data-bs-target="#reg_modal">Valider</button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="imgHeader px-xl-5">
+            <img class="image-fluid" src="assets/img/Voyants-voiture.jpg" alt="logo conducteur">
+        </div>
+
+    </div>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+SELECT content_question, content_response
+FROM question
+where is_active_question=1

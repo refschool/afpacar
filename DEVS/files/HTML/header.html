@@ -1,0 +1,11 @@
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/header.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/header.js"></script>
+
+
+<?php
+    // load the correct header (not connected / admin..)
+    include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . App::getHeaderFileName() . '.html';
+?>

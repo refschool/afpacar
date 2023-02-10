@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="assets/css/consult_profile.css" rel="stylesheet">
+
+  <!-- JS -->
+
+  <script src="assets/js/consult_profile.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="prof_main-body">
+      <!-- Titre entête de la gestion de profil -->
+      <div class="row m-0 p-0 justify-content-center">
+        <h1 class="col-12"><i class="fas fa-user cons_couleur_vert"></i> PROFIL DE <span
+            class="cons_couleur_vert">SIQUAC MORAIN</span></h1>
+        <div class="cons_interligne col-12 "></div>
+      </div>
+      <!-- Row des 2 cards -->
+      <div class="row mt-2">
+        <!-- Partie de gauche avec photo -->
+        <div class="col-lg-5">
+          <div class="card prof_card h-100">
+            <div class="card-body d-flex flex-column">
+              <div class=" text-center">
+                <div class="prof_contain_img mx-auto">
+                  <img src="https://via.placeholder.com/150x150" alt="Photo_user" class="rounded-circle prof_user_img"
+                    id="prof_img" width="150">
+
+                </div>
+                <div class="mt-4">
+                  <div class="row align-items-center">
+                    <h2> <span id="prof_prenom"></span> <span id="prof_nom"></span></h2>
+                  </div>
+                  <h5 class="text-secondary mt-3">Conducteur hors-pair</h5>
+                  <h3 class="cons_trajet mt-4">23 trajets proposés</h3>
+                </div>
+              </div>
+              <hr class="col-8 mx-auto mt-3" style="color: #7fc241;">
+              <div class="row prof_left_part_bottom">
+                <div class="d-flex flex-column col-4 text-center">
+                  <p class="mb-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"><i class="far fa-star"></i></i></p>
+                  <p class="pt-1">123 avis</p>
+                </div>
+                <p class=" col-5 h-100 ms-auto text-center">Membre depuis le 29/02/1000</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- Partie de droite des informations personnelles -->
+        <div class="col-lg-7 mt-md-0 mt-2">
+          <div class="card prof_card h-100 4">
+            <nav class=" col-12">
+              <h2 class="text-center cons_titre">Centres d'intérêts</h2>
+            </nav>
+            <div class="row mx-auto">
+              <ul>
+                <li> Les pédiluves </li>
+                <li> Les mecs attachiants </li>
+                <li> Romain Quissac </li>
+              </ul>
+            </div>
+            <div id='prof_description' class="col-12 mt-5 ">
+              <div class="prof_info_perso d-flex ">
+                <h2 class="text-center col-12 ps-5 cons_titre ">Informations complémentaires</h2>
+              </div>
+              <p class="cons_info_comp mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut, inventore
+                voluptatem harum necessitatibus nisi ipsa fugit tempora amet autem eum officia, perspiciatis ratione ut
+                aspernatur adipisci vel. Illo, vitae!</p>
+            </div>
+          </div>
+        </div>
+
+</body>
+
+</html>

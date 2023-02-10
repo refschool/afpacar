@@ -1,0 +1,111 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/exchange_users.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/exchange_users.js"></script>
+
+
+<div id="section-wrapper" class="container-fluid">
+  <!-------------------------------------------------------------------------
+   ---------------------------------- MAIN CONTAINER ------------------------
+   -------------------------------------------------------------------------->
+
+  <div class="container container-sm-fluid exc_main_container d-flex">
+
+    <!-------------------------------------------------------------------------
+     ---------------------------------- FIN MAIN CONTAINER --------------------
+     -------------------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------------------------
+     ---------------------------------- ASIDE ---------------------------------
+     -------------------------------------------------------------------------->
+
+    <aside id="exc_aside" class="col-lg-2 col-sm-12 d-flex m-0 p-0">
+
+      <!-- MENU LEFT -->
+      <div class="exc_arrowAside amineAside ">
+        <i onclick="hideAside()" class="showIcon fas fa-arrow-circle-left  "></i>
+      </div>
+      <div id="contentBubble" class="anim-lg exc_menu-left display1 amineAside w-100 h-100 d-flex  flex-column  my-">
+
+      </div>
+    </aside>
+
+    <!-------------------------------------------------------------------------
+     ---------------------------------- FIN ASIDE -----------------------------
+     -------------------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------------------------
+     ---------------------------------- SECTION -------------------------------
+     -------------------------------------------------------------------------->
+
+    <section class=" col-lg-10  col-md-12 my-3 ">
+
+      <!-- Messages templates  -->
+
+      <div id="template" class="messages_templates">
+        <p class="text-center text-muted">Pour commencer à discuter veuillez choisir votre interlocuteur</p>
+      <div class="exc_bubble">
+
+      </div>
+      <div class="exc_inputTarea row my-auto">
+        <div class="input-group  exc_input_grp ">
+          <textarea id="writted_message" type="text" class="form-control exc_form_control ms-4" placeholder="Écrivez votre message..."
+            aria-label="Recipient's username" aria-describedby="send_button" rows="1"></textarea>
+          <button id="send_button" class="btn btn_green me-4" type="button" onclick="addMessage()">Envoyer</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-------------------------------------------------------------------------
+   ------------------------------------- MODAL ------------------------------
+   -------------------------------------------------------------------------->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exc_modal_report" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold ms-auto" id="staticBackdropLabel">Signaler un message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="exc_modal-body d-flex flex-column align-items-center">
+          <input type="text" class="comp_form_control_pink form-control mt-2" id="reg_inp_forget_pw"
+            placeholder="Objet :">
+          <textarea id="exc_modal_area" class="exc_txt_report w-75 h-75 my-3"
+            placeholder="Veuillez préciser le motif de votre signalement :"></textarea>
+            <p id="error_report_message" class="text-danger text-center">Merci de remplir tous les champs</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn_pink" data-bs-dismiss="modal" onclick="emptyInput()">Annuler</button>
+          <button type="button" class="btn btn_blue" onclick="addMessageReport()" >Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------------------------------------------------------
+   ----------------------------------- FIN MODAL ----------------------------
+   -------------------------------------------------------------------------->
+
+  <!-------------------------------------------------------------------------
+   ---------------------------------- FIN SECTION ---------------------------
+   -------------------------------------------------------------------------->
+</div>
+

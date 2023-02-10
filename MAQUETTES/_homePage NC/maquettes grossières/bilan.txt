@@ -1,0 +1,23 @@
+◘ MOCKUP HOME version PC
+Enzo: slider / taille des blocs / nav ?
+Ilyès: contenu avantages
+Logan: structure cherche/propose trajet (modal ou champs intégrés ?)
+Mathieu: un peu tout
+Maxime: bloc dernier trajet -> pour une autre page
+Myriam: au survol/clic, le bloc se retourne et les champs apparaissent
+Pablo: comment ça marche : préciser échange de service/paiement. menu?
+Romain: formulaire. filtres de recherche (handicap..)
+Thomas: un peu tout. bloc actualité
+Youssef: 
+
+◘ MOCKUP HOME version mobile
+Enzo: 
+Ilyès: footer
+Logan: 
+Mathieu: un peu tout. blocs qui se déploient au clic
+Maxime: 
+Myriam: 
+Pablo: 
+Romain: 
+Thomas: 
+Youssef:

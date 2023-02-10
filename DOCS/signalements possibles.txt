@@ -1,0 +1,6 @@
+Signalements possibles :
+ - message
+ - témoignage
+ - descriptif profil utilisateur
+ - photo de profil utilisateur
+

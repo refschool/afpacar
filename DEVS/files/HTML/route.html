@@ -1,0 +1,81 @@
+<base href="<?= $GLOBALS_INI["BASE_HREF"]; ?>">
+<!DOCTYPE HTML>
+<html>
+
+    <!-- ◙◙ HEAD ◙◙ -->
+    <head>
+        <title>AfPaCar Project</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- ◘ CSS ◘ -->
+        <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css">
+        <link rel="stylesheet" href="assets/lib/toastr/toastr.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/app_components.css">
+        <?php
+            if ( !App::isHomepage() ) {
+                // CSS if not HomePage
+                echo '<link rel="stylesheet" href="assets/lib/datatables/datatables.css">';
+                echo '<link rel="stylesheet" href="assets/lib/datatables/Responsive-2.2.7/css/responsive.bootstrap.css">';
+            }
+        ?>
+        
+
+        <!-- ◘ JS ◘ -->
+        <script type="text/javascript" src="assets/lib/jquery/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="assets/lib/toastr/toastr.js"></script>
+        <script type="text/javascript" src="assets/js/proto.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <?php
+            if ( !App::isHomepage() ) {
+                // JS if not HomePage
+                echo '<script type="text/javascript" src="assets/lib/datatables/datatables.js"></script>';
+                echo '<script type="text/javascript" src="assets/lib/datatables/Responsive-2.2.7/js/dataTables.responsive.min.js"></script>';
+            }
+        ?>
+    </head>
+
+
+    <!-- ◙◙ BODY ◙◙ -->
+    <body class="app-body">
+
+        <!-- HEADER -->
+        <header class="app-header">
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . 'header.html'; ?>
+        </header>
+
+        
+        <!-- NAV -->
+        <nav class="app-nav">
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . 'nav.html'; ?>
+        </nav>
+
+
+        <!-- ASIDE -->
+        <aside class="app-aside">
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . 'aside.html'; ?>
+        </aside>
+
+
+        <!-- SECTION -->
+        <section class="app-section">
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . $myPHP . ".html"; ?>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . "footer.html"; ?>
+        </footer>
+
+
+        <!-- LOADING MODAL -->
+        <div id="loadingModal" class="app-modal fullscreen"></div>
+
+    </body>
+
+</html>

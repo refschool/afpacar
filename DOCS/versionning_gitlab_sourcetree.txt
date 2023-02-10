@@ -1,0 +1,17 @@
+◘ Etapes
+ • créer votre compte gitlab si vous n'en avez pas encore un
+ • télécharger et installer le logiciel Sourcetree depuis :
+https://www.sourcetreeapp.com/
+
+◘ mettre en place le projet :
+ • ouvrir Sourcetree
+ • fichier -> nouveau
+	- url:			https://gitlab.com/Damien_34/afpacar.git
+	- destination:	C:\afpacar\		(le dossier où vous souhaitez cloner le projet)
+	- nom:			afpacar
+ • ouvrir Sourcetree
+ • en cliquant sur le bouton "Récupérer", les dernières modifs sur les fichiers du dépôt distant seront copiées vers votre pc.
+ • mettez-vous sur la branche "develop" (en cliquant sur le bouton "Changer de branche"). La première fois, "develop" ne sera pas dans la liste : tapez "develop" dans le champ "Nouvelle branche" et cliquez sur "Créer une branche"
+
+
+

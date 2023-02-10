@@ -1,0 +1,100 @@
+<!--    info 
+
+    ♦ This is the homepage section displayed if A USER is CONNECTED ♦
+    
+Cette section de page d'accueil est affichée en cas d'utilisateur CONNECTÉ :
+    utilisateur non admin, ou admin avec le mode utilisateur activé
+
+-->
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/index_user.css">
+<link rel="stylesheet" href="assets/css/notif_user.css" />
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/index_user.js"></script>
+<script type="text/javascript" src="assets/js/notif_user.js"></script>
+
+
+<div id="section-wrapper" class="user container">
+    
+    <div class="row">
+        <h1 class="acc_titre-global col-12"><i class="fas fa-home acc_couleur-vert"></i> MON ACCUEIL <span class="acc_couleur-vert" >UTILISATEUR</span></h1>
+        <div class="acc_interligne col-12 " ></div>
+    </div>
+
+    <!-- Première row pour la gestion des trajets -->
+    <div class="row acc_background-color-green acc_row">
+
+        <!-- La classe "acc_contenu" passe en "display:none" en petit écran -->
+        <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-1  acc_contenu text-center align-self-center">
+            <h2 class="acc_titre-h2"><i class="fas fa-car  acc_couleur-vert acc_anim-logos "></i><b> Mes trajets</b></h2>
+            <p><a href="search" class="acc_liens-style acc_bordure-texte-vert">Rechercher un trajet</a></p>
+            <p><a href="ride" class="acc_liens-style acc_bordure-texte-vert">Proposer un trajet</a> </p>
+            <p><a href="" class="acc_liens-style acc_bordure-texte-vert" onclick="updateNotificationsServer()">Gérer mes trajets</a><span class="not_adm_badge-secondary notif_nombre_trajets text-center"></span></p>
+            
+        </div>
+
+        <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-2 acc_div-image">
+            <img src="assets/img/acc_roadtrip.jpg" class="acc_img-roadtrip w-100" alt="">
+
+            <!-- La classe "acc_overlay" n'est visible qu'en petit écran -->
+            <div class="acc_overlay">
+                <h2 class="acc_titre-h2"><i class="fas fa-car  acc_couleur-vert acc_anim-logos "></i><b> Mes trajets</b></h2>
+                <p><a href="search" class="acc_liens-style acc_bordure-texte-vert">Rechercher un trajet</a></p>
+                <p><a href="#" class="acc_liens-style acc_bordure-texte-vert">Proposer un trajet</a> </p>
+                <p><a href="#" class="acc_liens-style acc_bordure-texte-vert" onclick="updateNotificationsServer()">Gérer mes trajets</a><span class="not_adm_badge-secondary notif_nombre_trajets text-center"></span> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deuxième row pour la gestion des profils -->
+    <div class="row acc_background-color-pink acc_row">
+        
+        <div class="col-lg-6 col-md-6 order-lg-3 order-md-3 order-4 acc_div-image">
+            <img src="assets/img/acc_profil-pic.jpg" class="acc_img-profil w-100" alt="">
+
+            <!-- La classe "acc_overlay" n'est visible qu'en petit écran -->
+            <div class="acc_overlay">
+                <h2 class="acc_titre-h2"><i class="fas fa-user acc_couleur-rose  acc_anim-logos"></i><b> Mon profil</b></h2>
+                <p><a href="profile" class="acc_liens-style acc_bordure-texte-rose" onclick="updateNotificationsServer()">Gérer mon profil</a><span class="not_adm_badge-secondary notif_nombre_avis text-center"></span></p>
+                <p><a href="search_historic" class="acc_liens-style acc_bordure-texte-rose">Historique de mes Trajets</a></p>
+                <p><a href="vehicules" class="acc_liens-style acc_bordure-texte-rose">Gérer mes véhicules</a></p>
+            </div>
+        </div>
+
+        <!-- La classe "acc_contenu" passe en "display:none" en petit écran -->
+        <div class="col-lg-6 col-md-6 order-lg-4 order-md-4 order-3  acc_contenu text-center align-self-center">
+            <h2 class="acc_titre-h2"><i class="fas fa-user acc_couleur-rose  acc_anim-logos"></i><b> Mon profil</b></h2>
+            <p><a href="profile" class="acc_liens-style acc_bordure-texte-rose" onclick="updateNotificationsServer()">Gérer mon profil</a><span class="not_adm_badge-secondary notif_nombre_avis text-center"></span></p>
+            <p><a href="search_historic" class="acc_liens-style acc_bordure-texte-rose">Historique de mes Trajets</a></p>
+
+            <p><a href="vehicules" class="acc_liens-style acc_bordure-texte-rose">Gérer mes véhicules</a></p>
+        </div>
+        
+    </div>
+
+    <!-- Troisième row pour la gestion des messages -->
+    <div class="row acc_background-color-blue  acc_row mb-5">
+
+        <!-- La classe "acc_contenu" passe en "display:none" en petit écran -->
+        <div class="col-lg-6 col-md-6 order-lg-5 order-md-5 order-6  acc_contenu text-center align-self-center">
+            <h2 class="acc_titre-h2"><i class="fas fa-envelope acc_couleur-bleu acc_anim-logos"></i><b> Mes messages</b></h2>
+            <p><a href="exchange_users" class="acc_liens-style acc_bordure-texte-bleu" onclick="updateNotificationsServer()">Voir mes messages</a><span class="not_adm_badge-secondary notif_nombre_messages text-center"></span></p>
+        </div>
+
+        <div class="col-lg-6 col-md-6 order-lg-6 order-md-6 order-5 acc_div-image">
+            <img src="assets/img/acc_message-pic.jpg" class="acc_img-messages w-100" alt="">
+
+            <!-- La classe "acc_overlay" n'est visible qu'en petit écran -->
+            <div class="acc_overlay">
+                <h2 class="acc_titre-h2"><i class="fas fa-envelope acc_couleur-bleu acc_anim-logos"></i><b> Mes messages</b></h2>
+                <p><a href="exchange_users" class="acc_liens-style acc_bordure-texte-bleu" onclick="updateNotificationsServer()">Voir mes messages</a><span class="not_adm_badge-secondary notif_nombre_messages text-center"></span></p>
+            </div>
+        </div>
+
+    </div>     
+
+</div>

@@ -1,0 +1,43 @@
+:root {
+	--color-blue: 		rgba(0, 170, 255, 1);
+	--color-green:		rgba(127, 194, 65, 1);
+	--color-pink:	 	rgba(227, 0, 126, 1);
+	--color-black:		rgba(35, 31, 32, 1);
+	--color-bootstrap:	rgba(0, 123, 255, 1);
+	--color-main:		  var(--color-green);
+}
+
+.cons_info_comp{
+	width: 80%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+ul li {
+	font-size: 20px;
+}
+
+.cons_titre{
+		height: 50px;
+		background-color: #7fc241 !important;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+		border: 1px solid rgba(0,0,0,.125);
+		color: white;
+		padding-top: 3px;
+	}
+
+.cons_couleur_vert{
+	color: var(--color-green);
+}
+
+.cons_interligne{
+	background-color: #7fc241;
+    height: 5px;
+    margin-bottom:20px;
+}
+
+.cons_trajet{
+	font-size: 25px;
+    font-weight:700;  
+    color: var(--color-green);
+}

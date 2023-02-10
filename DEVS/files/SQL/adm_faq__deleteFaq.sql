@@ -1,0 +1,1 @@
+delete from question where id_question=@iIndiceASupprimer

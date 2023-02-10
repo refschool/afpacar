@@ -1,0 +1,146 @@
+<!--    info 
+
+    ♦ This header is displayed if an USER is CONNECTED ♦
+    
+Ce header est affiché quand un utilisateur non admin est connecté,
+    ou un admin avec le mode utilisateur activé.
+
+-->
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/header_user.css">
+<link rel="stylesheet" href="assets/css/notif_user.css" />
+
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/header_user.js"></script>
+<script type="text/javascript" src="assets/js/app_temp_login.js"></script>
+<script type="text/javascript" src="assets/js/notif_user.js"></script>
+
+
+
+  <!-- div hearder page -->
+  <div id='header-wrapper' class='user mb-5'>
+    <div class="container-fluid ps-2 pe-2">
+        <div class="row">
+            <!-- div logo afpaCar -->
+            <div class="col-2 acc_adm_cobtnlogoheader">
+                <img src="assets/img/logoafpacar_small.png" alt="logo afpaCar">
+            </div>
+            <!-- div Titre header -->
+            <div class="col-6 mt-2  text-center">
+                <h1>Covoiturez en toute liberté</h1>
+            </div>
+            <!-- div logo afpa -->
+            <div class="col-2 acc_adm_cobtnlogoheader text-end">
+                <img src="assets/img/logo-afpa_small.png" alt="logo afpa">
+            </div>
+            <!-- div bouton logo connecter -->
+            <div class="col-2 mt-4 d-flex justify-content-end">
+
+                <!-- dropdown menu notifications -->
+                <div class="dropdown">
+                    <span class="not_badge-cloche notif_numero_total text-center"></span>
+                    <input type="image" onclick="showNotifications()" id="dropdownNotif1" data-bs-toggle="dropdown" aria-expanded="false" src="assets/img/notif_pink.png" class="icon-bell-notification">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownNotif1">
+                        <li><a class="dropdown-item" href="exchange_users">Messages<span class="not_adm_badge-secondary text-center notif_nombre_messages"></span></a></li>
+                        <li><a class="dropdown-item" href="search">Trajets<span class="not_adm_badge-secondary text-center notif_nombre_trajets"></span></a></li>
+                        <li><a class="dropdown-item" href="attest_users">Avis<span class="not_adm_badge-secondary text-center notif_nombre_avis"></span></a></li>
+                      </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-circle icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Connexion / Inscription</a></li>
+                        <li><a class="dropdown-item">--------------</a></li>
+                        <?php
+                            if (App::isAdminConnected()) {
+                                echo '<li class="dropdown-item temp_fct button" data-action="disableUserMode">Revenir sur ma page ADMIN</li>';
+                            }
+                        ?>
+                        <li class="dropdown-item temp_fct button" data-action='simulateNonAdminConnexion'>Simuler connexion utilisateur (provisoire)</li>
+                        <li class="dropdown-item temp_fct button" data-action='simulateAdminConnexion'>Simuler connexion admin (provisoire)</li>
+                        <li class="dropdown-item temp_fct button" data-action='simulateAdminConnexionWithUserMode'>Simuler connexion admin mode utilisateur (provisoire)</li>
+                        <li><a class="dropdown-item">--------------</a></li>
+                        <?php
+                            if ( App::isLocalhost() ) {
+                                echo '<li><a class="dropdown-item" href="app_dev">Page Développeur</a></li>';
+                                echo '<li><a class="dropdown-item">--------------</a></li>';
+                            }
+                        ?>
+                        <li class="dropdown-item temp_fct button" data-action="logout">Déconnexion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-3 position-relative p-0">
+        <div class="acc_adm_cobtnheaderImg ">
+            
+            <!-- image header transparent Petit écran -->
+            <div class="d-md-block acc_adm_cobtntitre-resp d-lg-block d-sm-block d-block d-xl-none acc_adm_cotopImg-sm position-absolute">
+                <div class="row mt-md-5">
+                    <div class="col-12">
+                        <h1 class='h1 ms-5 text-center'>
+                            <b class="acc_adm_cobtntext-pink">Bienvenue </b>
+                            <b>sur votre page</b>
+                            </br>
+                            <b class="acc_adm_cobtntext-pink">  d'accueil </b>
+                        </h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h2 class="h4 fx-bold text-center">Sur cette page <b class="acc_adm_cobtntext-pink">d'accueil</b> vous allez pouvoir <b class="acc_adm_cobtntext-pink">gérer </b>vos trajets, 
+                        vos  <b class="acc_adm_cobtntext-pink">messages,</b> ou  <b class="acc_adm_cobtntext-pink">rechercher</b> un trajet
+                        </h2>
+                    </div>
+                    <div class="d-block justify-content-center">
+                        <div class="">
+                            <button class="btn btn-primary p-2 btn-lg d-block mx-auto mb-3" data-action='simulateAdminConnexionWithUserMode'>Rechercher un trajet</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- image header transparent Grand écran -->
+
+            <div class="acc_adm_cobtntopImg d-md-none d-lg-none d-sm-none d-none d-xl-block position-absolute">
+                <div class="mt-3">
+                    <h1 class='h1 ms-5 text-center'>
+                        <b class="acc_adm_cobtntext-pink">Bienvenue </b>
+                        <b>sur votre page</b>
+                        </br>
+                        <b class="acc_adm_cobtntext-pink">  d'accueil </b>
+                    </h1>
+                </div>
+                <div class="ps-3 pe-3 d-flex justify-content-center">
+                    <h2 class="h4 fx-bold text-center">Sur cette page <b class="acc_adm_cobtntext-pink">d'accueil</b> vous allez pouvoir <b class="acc_adm_cobtntext-pink">gérer </b>vos trajets, vos  <b class="acc_adm_cobtntext-pink">messages</b>, ou  <b class="acc_adm_cobtntext-pink">rechercher</b> un trajet
+                    </h2>
+                </div>
+
+                <div class="acc_adm_cobtnform bg-light mt-3 mb-5 d-flex justify-content-center">
+                    <div class="pb-4 ">
+                        <div class="ps-3 mt-3 pe-3 text-center">
+                            <p class="h4 fx-bold ">Des <b class="acc_adm_cobtntext-pink">centaines </b>de <b class="acc_adm_cobtntext-pink">trajets</b>, une seule destination : <b class="acc_adm_cobtntext-pink">l'Afpa </b></p>
+                        </div>
+                        <p class="text-center ps-3 pe-3 pt-md-3 pb-md-2">Rechercher mon futur trajet vers mon centre Afpa</p>
+                        <button class="btn btn-primary p-2 btn-lg d-block mx-auto mb-3" data-action='simulateAdminConnexionWithUserMode'>Rechercher un trajet</button>
+                    </div>
+                </div>
+            </div>
+            <div class="acc_adm_cobtnimgHeader px-xl-5">
+                <img class="image-fluid" src="assets/img/header_user_co.jpg" alt="logo conducteur">
+            </div>
+
+        </div>
+    </div>
+</div>

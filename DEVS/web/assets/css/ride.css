@@ -1,0 +1,466 @@
+:root {
+    --color-blue:         rgba(0, 170, 255, 1);
+    --color-green:        rgba(127, 194, 65, 1);
+    --color-pink:         rgba(227, 0, 126, 1);
+    --color-black:        rgba(35, 31, 32, 1);
+    --color-bootstrap:    rgba(0, 123, 255, 1);
+    --color-main:          var(--color-green);
+}
+
+
+.ride_body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*********************** TITLE ***********************/
+
+.ride_h2-green{
+    color: #7fc241;
+}
+.ride_line-green{
+    background-color: #7fc241;
+    height: 5px;
+    margin-bottom: 50px;
+}
+
+/*********************** MAIN ***********************/
+
+/* .ride_main{
+    width: 100%;
+    height: 1500px;
+    border: solid 1px black;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+} */
+
+/***** H3 *****/
+
+.ride_div-h3{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: var(--color-green);
+}
+.ride_h3{
+    color: white;
+    padding-top: 7px;
+    margin-left: 20px;
+}
+/***** H4 *****/
+
+.ride_h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/*********************** DRIVER OR PASSENGER ***********************/
+
+.ride_driver-div{
+    border: 2px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    margin-bottom: 20px;
+}
+.ride_cp{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 20px 50px;
+}
+.ride_form-input{
+    margin-top: 6px;
+}
+.ride_form-label-1, .ride_form-label-2{
+    font-size: 18px;
+    margin-left: 10px;
+}
+/*********************** YOUR RIDE ***********************/
+
+/*** ADRESS ***/
+
+.ride_select{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    /* align-items: center; */
+}
+.ride_step{
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.ride_select-element{
+    width: 66%;
+}
+.ride_address-icon{
+    margin: 1px 0 0 17px;
+    font-size: 35px;
+}
+.ride_input{
+    width: 66%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.ride_input-cp{
+    margin-left: 50px;
+}
+
+/*** HOURS ***/
+
+.ride_input-date{
+    margin-left: 50px;   
+}
+.ride_input-date-1, .ride_input-date-2{
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+    padding-left: 15px;
+    margin-right: 25px;
+    height: 35px;
+    width: 20%;
+}
+/* .ride_text{
+    font-size: 21px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+} */
+
+/*** DAYS CHECKBOX ***/
+
+.ride_days-column{
+    display: flex;
+    flex-direction: column;
+}
+.ride_title-day{
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.ride_days{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+.ride_days-m{
+    margin-right: 5px;
+}
+.ride_days-check{
+    width: 90%;
+    border: solid 1px #7fc241;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+/**** Bouton radio / Label centré dans la div ****/
+
+.ride_trip-radio, .ride_trip-label{
+    display: flex;
+    align-self: center;
+} 
+.ride_days-trip{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    padding: 30px 0 30px 0;
+}
+.ride_trip-label{
+    margin-left: 6px;
+    margin-right: 15px;
+}
+.ride_days-trip-t1, .ride_days-trip-t2{
+    margin: 10px 15px 5px 10px;
+}
+.ride_checkbox-switch{
+    margin-top: 10px;
+}
+.ride_days-time{
+    display: flex;
+}
+.ride_div-timeA, .ride_div-timeV, .ride_div-timeT, .ride_div-timeR{
+    width: 22%;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-right: 50px;
+}
+.ride_div-leave{
+    display: none;
+}
+.ride_days-input-place, .ride_days-input-time{
+    margin-left: 10px;
+    width: 90% !important;
+}
+.ride_days-input-time{
+    margin-right: 10px;
+}
+.ride_add-step{
+    font-size: 35px;
+    margin-left: 10px;
+}
+.ride_days-input-time:hover{
+    box-shadow: 0 0 0 2px #7fc241 !important;
+    border-radius: 5px;
+}
+.ride_days-input-time:focus{
+    box-shadow: 0 0 0 2px #7fc241 !important;
+    border-color: #7FC241 !important;
+}
+.ride_form_control:focus{
+    box-shadow: 0 0 0 2px #7fc241 !important;
+}
+.ride_travel-day{
+    font-weight: bold;
+    margin: 0px 20px 5px 10px;
+}
+.ride_days-input-vehicle{
+    margin-left: 10px;
+    width: 90%;
+}
+.ride_trip{
+    border: 2px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    margin-bottom: 20px;
+}
+/*** ADDITIONAL INFORMATIONS ***/
+
+.ride_div-informations{
+    border: 2px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.ride_informations-items{
+    padding-left: 20px;
+}
+.ride_informations-icons{
+    color: #7fc241;
+    margin: 0 25px 0 3px;
+    font-size: 20px;
+}
+.ride_info{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.ride_info-textarea{
+    margin-left: 20px;
+    width: 95%;
+    height: 150px;
+}
+.ride_select-step{
+    width: 100% !important;
+}
+.ride_select-clone{
+    width: 94% !important;
+}
+.ride_days-step{
+    width: 97% !important;
+}
+/* NECESSARY TO HAVE THE INPUT AND THE ADD BUTTON INLINE */
+.ride_step-div{
+    display: flex;
+    align-items: center;
+}
+/* STEP ADD BUTTON */
+.ride_step-add{
+    font-size: 30px;
+    padding-left: 15px;
+}
+.ride_step-title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.ride_form-allcheckbox{
+    margin: 15px 0 40px 0;
+}
+.ride_form-checkbox{
+    margin: 10px 0 0 20px;
+}
+.ride_checkbox-infos{
+    /* padding-left: 20px; */
+    padding-bottom: 10px;
+}
+.ride_informations-d-buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.ride_informations-button{
+    font-weight: bold;
+    color: white;
+    background-color: #7fc241;
+    height: 60px;
+}
+.ride_informations-button:hover{
+    background-color: white;
+    color: #7fc241;
+    border: solid 1px #7fc241;
+}
+.ride_notchecked{
+    display: none;
+}
+
+/*********************** MEDIA QUERIES ***********************/
+
+@media screen and (max-width: 1200px) {
+    .ride_form-input{
+        margin-top: 9px;
+    } 
+    .ride_h4{
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .ride_input, .ride_input-cp, .ride_select{
+        margin-left: 17%;
+    }
+    .ride_input-date{
+       display: flex;
+       justify-content: center; 
+    }
+    .ride_title-day{
+        margin-left: 17%;
+    }
+    .ride_days{
+        margin-left: 160px;
+    }
+    .ride_days-check{
+        margin-left: 180px;
+        width: 76%;
+    }
+    .ride_travel-day{
+        font-size: 14px;
+    }
+    .ride_days-step{
+        margin-left: 20px;
+    }
+    }
+
+
+  @media screen and (max-width: 992px) {
+
+    /* DRIVER OR PASSENGER */
+    .ride_cp{
+        /* text-align: center; */
+        /* flex-direction: column;
+        align-items: center; */
+        margin: 0;
+        margin-left: 30px;
+    }
+    .ride_form-label-2, .ride_form-label-1{
+        margin-right: 10px;
+        margin-top: 2px;
+        font-size: 18px;
+    }
+    .ride_travel-day{
+        font-size: 15px;
+        width: 100%;
+    }
+    .ride_days-check{
+        margin-left: 35px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .ride_input-date{
+        margin-left: 5px;
+        width: 100%;
+    }
+    .ride_title-day{
+        margin-left: 6%;
+    }
+    .ride_days{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .ride_days-step{
+        margin-bottom: 15px;
+    }
+
+}
+  @media screen and (max-width: 768px){
+      .ride_h3{
+          text-align: center;
+          margin-left: 0;
+      }
+      .ride_days-time{
+          display: flex;
+          flex-direction: column;
+      }
+      .ride_days-check{
+        width: 60%;
+        margin-left: 130px;
+    }
+      .ride_div-timeA, .ride_div-timeR, .ride_div-time-4{
+        text-align: center;
+        width: 70%;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .ride_days-input-vehicle{
+        margin-left: 17px;
+        width: 91%;
+    }
+    .ride_days-step{
+        width: 64%;
+        margin-left: 58px;
+    }
+    .ride_travel-day{
+        text-align: center;
+    }
+    .ride_days-step{
+        text-align: center;
+    }
+    .ride_trip-step{
+        width: 100% !important;   
+    }
+    .ride_trip-radio{
+        height: 11px;
+        width: 14px;
+    }
+    .ride_trip-label{
+        text-align: center;
+    }
+    .ride_days-trip{
+        margin-left: 15px;
+    }
+  }
+  @media screen and (max-width: 991px){
+    .ride_form-label-2, .ride_form-label-1{
+        margin-right: 10px;
+        margin-top: 2px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 575px){
+
+    .ride_days-check{
+        margin-left: 60px;
+        width: 80%;
+    }
+    .ride_trip-radio{
+        width: 12px;
+    }
+}
+@media screen and (max-width: 516px){
+
+    .ride_form-label-2, .ride_form-label-1{
+        margin-right: 15px;
+        margin-top: 2px;
+        font-size: 17px;
+    }
+
+}
+@media screen and (max-width: 460px){
+
+    .ride_trip-radio{
+        width: 11px;
+    }
+}
+

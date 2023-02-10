@@ -1,0 +1,485 @@
+<!-- ◘ JS ◘ -->
+<script src="assets/js/search.js"></script>
+
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" type="text/css" href="assets/css/search.css" />
+
+
+
+
+
+<!-- div titre rechercher -->
+<div class=" container srch_titre_rechercher d-flex justify-content-center justify-content-lg-start   col-12">
+
+    <div class="">
+        <span> <i class='mt-1 me-2 fas fa-search srch_titre_rechercher_icon '></i>RECHERCHER UN TRAJET </span>
+    </div>
+
+</div>
+<!-- Div forumulaire -->
+
+<div class=" container srch_div_formulaire  ">
+
+
+    <!-- DIV INPUT  -->
+    <div class=" srch_div_input d-flex row flex-column-sm-4">
+        <!-- DIV INPUT RECHERCHE -->
+
+        <div class=" col-lg-6 col-12 ">
+            <input class="comp_form_control_pink form-control srch_input" list="list_result_city" id="search_city" class="srch_input"
+                placeholder="Rechercher">
+            
+
+            <!--**** datalist resultat***** -->
+            <datalist id="list_result_city">
+                <option onclick id="id_city" value="___NameCity___" data-id="___IdCity___">
+            </datalist>
+        </div>
+        <!-- DIV INPUT date -->
+
+        <div class="col-lg-6 col-12 ">
+            <input class="comp_form_control_pink form-control srch_input" type="date" id="date_trajet"
+                name="date_trajet" min="2020-04-20">
+
+        </div>
+   
+    </div>
+
+    <!-- dataliste template -->
+    <datalist id="city" style="display: none;">
+        <option id="id_city" value="___NameCity___" data-id="___IdCity___">
+    </datalist>
+
+
+    <!-- Div CHECKBOX -->
+    <div class=" srch_div_checkbox d-flex row flex-column-sm-4">
+        <!-- div checkbox aller et retour  -->
+        <div class=" srch_div_checkbox d-flex  col-lg-4 col-12 justify-content-center ">
+
+            <!-- DIV checkbox aller  -->
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-3  ">
+                <div>
+                    <p class="srch_police_checkbox">Aller</p>
+
+                </div>
+                <div>
+                    <label class="  rd_switch">
+                        <input type="checkbox" id="aller">
+                        <span class="rd_slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <!-- DIV checkbox retour  -->
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-3 ">
+                <div>
+                    <p class="srch_police_checkbox">Retour</p>
+
+                </div>
+                <div class="">
+                    <label class=" rd_switch3">
+                        <input type="checkbox" id="retour">
+                        <span class="rd_slider3 round"></span>
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Div bouton checkbox offres et demandes -->
+        <div class=" srch_div_checkbox d-flex  col-lg-4 col-12 justify-content-center ">
+            <!-- DIV checkbox offre  -->
+
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-3">
+
+
+                <div>
+                    <p class="srch_police_checkbox" id="txt_driver">Passager</p>
+                </div>
+                <div>
+                    <input type="radio" name="srch_radio" class="srch_radio_passenger" id="srch_radio_passenger"
+                        checked>
+
+                </div>
+            </div>
+
+            <!-- DIV checkbox demande  -->
+
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-3">
+                <div>
+                    <p class="srch_police_checkbox">Conducteur</p>
+
+
+                </div>
+                <div>
+                    <!-- <label class=" rd_switch3">
+                        <input type="checkbox" id="drive" >
+                        <span class="rd_slider3 round"></span>
+                    </label> -->
+                    <div>
+                        <input type="radio" name="srch_radio" class="srch_radio_driver" id="srch_radio_driver">
+
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Div bouton checkbox fumeur bagage et handicape -->
+        <div class=" srch_div_checkbox d-flex  col-lg-4 col-12 justify-content-center ">
+
+            <!-- DIV checkbox FUMEUR  -->
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-2 ">
+                <div class="srch_icon_checkbox">
+                    <i class="fas fa-smoking"></i>
+
+
+                </div>
+                <div class=" ">
+                    <label>
+
+                        <input class="form-check-input comp_input-blue" type="checkbox" value="" id="smoke">
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- DIV checkbox BAGAGE  -->
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-2">
+                <div class="srch_icon_checkbox ">
+
+                    <i class="fas fa-suitcase"></i>
+
+                </div>
+                <div class="">
+                    <label>
+
+                        <input class="form-check-input comp_input-blue" type="checkbox" value="" id="luggage">
+                    </label>
+                </div>
+
+            </div>
+            <!-- DIV checkbox HANDICAPE  -->
+
+            <div class="srch_div_checkbox_position d-flex flex-column align-items-center col-lg-4 col-2">
+                <div class="srch_icon_checkbox  ">
+
+                    <i class="fas fa-wheelchair"></i>
+
+                </div>
+                <div class="">
+                    <label>
+
+                        <input class="form-check-input comp_input-blue" type="checkbox" value="" id="handicap">
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- FIN  Div CHECKBOX -->
+
+    <!-- Div bouton rechercher -->
+    <div class="d-flex col-12 justify-content-center">
+        <div>
+
+            <button onclick="selectTrajet()" type="button" class="btn btn_green"> <i
+                    class=" me-1 fas fa-search"></i>Recherche</button>
+
+        </div>
+    </div>
+    <!-- fin div bouton recherche -->
+
+</div>
+<!-- FIN DIV FORMULAIRE  -->
+
+
+<div class="container">
+    <!-- TITRE SECTION -->
+    <div class="  d-flex srch_titre_section justify-content-center justify-content-lg-start   col-12">
+
+        <div class="">
+            <span> <i class=' srch_icon_titre_trajet mt-1 me-2 fas fa-flag-checkered'></i>Mes Trajets</span>
+        </div>
+
+    </div>
+    <!-- Div Template  -->
+    <div id="div_template_resultat" style="display: none;">
+        <fieldset class=" d-flex row flex-column-sm-12 " data-ride="___sIdRide___" data-info="___sIdInfo___">
+            <legend class="srch_date_horaire">___sDate_time___</legend>
+            <!-- DIV 1-->
+
+            <!--  user et avis  -->
+
+            <div class="col-lg-2 d-flex flex-column justify-content-center mb-1">
+                <!-- div image user -->
+                <div class="text-center">
+                    <img class="srch_img_user rounded-circle" src="___sImageFilename___" alt="">
+                    <p style="margin: 0;">___sName___ ___SfirstName___</p>
+                </div>
+                <!-- div icone star -->
+                <div class="d-flex   col-12 ">
+                    <div class=" d-flex col-12 justify-content-center">
+
+
+
+                        <div class="srch_icon_star">
+                            <i class="___star1___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star2___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star3___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star4___ fa-star"></i>
+                        </div>
+                        <div class="srch_icon_star">
+                            <i class="___star5___ fa-star"></i>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- DIV 2 Principal-->
+            <!-- trajet + icon bagage fumeur et handicape -->
+            <div class="col-lg-8 d-flex flex-column">
+                <!-- div 2.1 -->
+                <!-- Div icon car +arrow + map -->
+                <div class=" d-flex  justify-content-center col-12 ">
+                    <!-- DIV icon car -->
+                    <div class="col-2 d-flex justify-content-center ">
+                        <div class="srch_div_trajet_icon_car ">
+
+                            <i class="fas fa-car"></i>
+
+                        </div>
+                    </div>
+                    <!-- DIV icon arrow -->
+
+                    <div class="col-8 d-flex justify-content-center">
+                        <div class="srch_div_trajet_icon_arrow text-center">
+
+                            ___Arrow___
+                            <p class="srch_text_trajet text-center">___aller_retour___</p>
+
+                        </div>
+
+
+                    </div>
+                    <!-- DIV icon map -->
+
+                    <div class="col-2 d-flex justify-content-center ">
+                        <div class="srch_div_trajet_icon_map pt-1">
+
+                            <i class="fas fa-map-marker-alt"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- DIV Ville +route + AFPA -->
+                <div class=" d-flex  justify-content-center col-12 ">
+                    <!-- div ville depart /retour -->
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="srch_div_ville_depart">
+                            <p>___sCity___</p>
+                        </div>
+                    </div>
+                    <!-- Div route -->
+                    <div class=" srch_div_route col-8 pt-2 ">
+
+                        <div class="d-flex  ">
+                            <div class="srch_point_arriver  "></div>
+
+                            <div class="srch_route col-6"></div>
+
+                            <div class="srch_point_arriver  "></div>
+                        </div>
+
+                    </div>
+                    <!-- div Afpa map -->
+                    <div class="col-2 d-flex justify-content-center ">
+                        <div class="srch_div_ville_arriver text-center">
+                            <p class="m-0">12 rue </p>
+                            <p class="m-0">Jean Mermoz, Afpa </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Div 2.2 -->
+                <!-- Fumeur handicape bagage et user -->
+                <div class="d-flex col-12 justify-content-center">
+                    <div class=" d-flex  justify-content-center col-6 ">
+                        <!-- DIV icon smoke -->
+                        <div class="col-3 d-flex justify-content-center">
+                            <div class="srch_div_icon_smoke">
+
+                                ___smoking___
+
+                            </div>
+                        </div>
+                        <!-- DIV icon bagage -->
+
+                        <div class=" col-3 d-flex justify-content-center">
+                            <div class="srch_div_icon_bagage">
+
+                                ___sLuggage___
+
+                            </div>
+                        </div>
+                        <!-- DIV icon handicape -->
+
+                        <div class="col-3 d-flex justify-content-center">
+                            <div class="srch_div_icon_handicape">
+
+                                ___sHandic___
+
+                            </div>
+
+                        </div>
+                        <!-- DIV icon user -->
+
+                        <div class="col-3 d-flex flex-column justify-content-center">
+                            <div class="srch_div_icon_user text-center">
+
+                                <i class="fas fa-users"></i>
+
+                            </div>
+                            <div class="srch_div_nb_place text-center">
+                                <p>___iSeats___ Place(s)</p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- DIV 3 -->
+            <!-- type resultat + btn reserver ou modifier+ infos -->
+            <div
+                class=" col-lg-2 d-flex flex-lg-column flex-md-column-12 flex-row-reverse justify-content-between mb-1">
+                <!-- Div 3.1 type resultat -->
+                <div class="  d-flex  justify-content-end align-items-end ">
+                    <div class="srch_div_type">
+                        <p class=" m-0">___sOffer___</p>
+                    </div>
+                </div>
+
+
+                <!-- div 3.2 icon reserver -->
+
+                <div class=" ___classModif___  ms-4 d-flex flex-column   ">
+                    <div class="___sclassReserver___   text-center ">
+                        ___sIconResever___
+                    </div>
+                    <div class=" srch_div_icon_reserver_modif_text text-center">
+                        <div>
+                            <p class=" txt_label m-0">___sTxt_Reserver___</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- div 3.3 icon information -->
+                <div class="  d-flex justify-content-end">
+                    <div class=" d-flex srch_div_icon_info align-items-end">
+                        <i onclick="Modal_Info(___sIdAd___, ___sIboucle___)" class="fas fa-info-circle" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </fieldset>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- ◘MODALE RESERVER◘ -->
+    <div class=" modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">Réservation</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="resultat_modale">
+                   
+                </div>
+                <div class="modal-body" id="resultat_modale_refus">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button onclick="book_ok()" type="button" id="btn_modal_confirmer" class="btn btn_blue"
+                        data-bs-dismiss="modal">Confirmer</button>
+                    <button type="button" class="btn btn_pink "  id="btn_modal_annuler" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn_pink " id="btn_modal_fermer" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal INFOS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class=" modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="info_resultat">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn_pink " data-bs-dismiss="modal">Fermer</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- *************************************************************BLOCK RESULTAT ******************************************************************* -->
+
+    <table id="div_tous_les_resultats" width="100%"></table>
+
+
+</div>

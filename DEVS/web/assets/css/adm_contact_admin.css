@@ -1,0 +1,137 @@
+/**************************************** CONTENEUR  *****************************************/
+
+.cnt_conteneur-principal
+{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 0px 30px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 15px;
+}
+
+/**************************************** TITRE PRINCIPAL  *****************************************/
+
+
+.cnt_modifications
+{
+    margin-top: 10px;
+}
+
+.cnt_modifications img
+{
+    height: 100px;
+    width: 100px;
+}
+
+.cnt_modifications h1
+{
+    padding-top: 25px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.cnt_modifications span
+{
+    color: #7fc241;
+}
+
+.cnt_interligne
+{
+    height: 5px;
+    background-color: #7fc241;
+}
+
+/* 
+Bandeau "Où nous trouver :"
+*/
+
+.cnt_nous-trouver
+{
+    margin-top: 40px;
+    background-color: #7fc241;
+    color: white;
+    text-align: center;
+    /* border: 2px solid #231f20; */
+    padding: 7px;
+}
+
+/* 
+Input type URL de la map à modifier
+*/
+
+.cnt_url-map
+{
+    margin: 20px 0;
+}
+
+iframe
+{
+    margin-bottom: 50px;
+}
+
+/* 
+Bandeaux "Coordonnées" et "Horaires"
+*/
+.cnt_div-coordonnées
+{
+    width: 50%;
+}
+
+.cnt_div-horaires
+{
+    width: 50%;
+}
+
+.cnt_coordonnées
+{
+    margin-top: 40px;
+    background-color: #7fc241;
+    color: white;
+    text-align: center;
+    /* border: 2px solid #231f20; */
+    padding: 7px;   
+}
+
+.cnt_horaires
+{
+    margin-top: 40px;
+    background-color: #7fc241;
+    color: white;
+    text-align: center;
+    padding: 7px;   
+}
+
+.cnt_espace
+{
+    width: 20px;
+}
+
+/* 
+Boutons fin de page
+*/
+
+.cnt_boutons
+{
+    margin: 30px 0;
+}
+
+@media screen and (max-width:992px)
+{
+    .cnt_div-coordonnées
+    {
+        width: 100%;
+    }
+
+    .cnt_div-horaires
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:405px)
+{
+    .cnt_modifications img
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,188 @@
+:root {
+    --color-blue:         rgba(0, 170, 255, 1);
+    --color-green:        rgba(127, 194, 65, 1);
+    --color-pink:         rgba(227, 0, 126, 1);
+    --color-black:        rgba(35, 31, 32, 1);
+    --color-bootstrap:    rgba(0, 123, 255, 1);
+    --color-white:        rgba(255, 255, 255);
+
+    --color-main:        var(--color-green);
+}
+
+.pink{
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.text-pink
+{
+    color: var(--color-pink);
+}
+
+.green{
+    background-color: var(--color-green);
+    color: whitesmoke;
+}
+
+.black{
+    background-color:  var(--color-black);
+    color: white;
+    width: 75%;
+}
+.black:hover{
+    color:white;
+}
+.blue{
+    background-color:var(--color-blue);
+    color: white;
+}
+
+.white{
+background-color:  var(--color-white);
+border: solid 1px var(--color-green)
+}
+.white:hover{
+    background-color: var(--color-green);
+    color: whitesmoke;
+}
+
+
+.haut_de_page
+{
+width: 100%;
+height: 100px;
+border-bottom: 5px solid #7FC241;
+margin-top: 5%;
+}
+
+        .haut_de_page h1 {
+            color: #7FC241;
+        }
+        .haut_de_page span{
+            color: black;
+        }
+
+
+.premier_btn{
+    margin: auto;
+    margin-top: 5%;
+    width: 15%;
+    margin-bottom: 5%;
+}
+
+.accordion-button:not(.collapsed){
+    color: #7FC241;
+    font-size: large;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) p2{
+    color: hotpink;
+}
+
+.vehicule_principal{
+    margin: auto;
+    color:#7FC241;
+   
+}
+
+.accordion-button{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+.form-check-input:checked{
+    background-color: #7FC241;
+    border-color: #7FC241;
+}
+
+            
+            .fa-car, .fa-copy{
+                color:rgba(127, 194, 65, 1);
+                margin-left: 1%;
+                margin-right: 5%;
+            }
+            .fa-exclamation-triangle{
+            
+                color:rgba(127, 194, 65, 1);
+                
+
+                
+            }
+
+.alignement_horizontal{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+.accordion-button{
+    margin-left :none;
+}
+
+.voiture{
+width: 90%;
+border-color: #E3007E;
+}
+.marque {
+    color: gray ;
+    width: 90%;
+}
+
+.trait_gris{
+    width: 90%;
+    height: 10px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 3%;
+    margin-bottom: 2%;
+    margin-left: 1.2%
+}
+
+.controle_technique{
+    width: 20%;
+    border-color: #E3007E;
+     display:inline-block !important; 
+}
+
+.trait_gris2{
+    width: 90%;
+    height: 10px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 3%;
+    margin-bottom: 3%; 
+}
+
+
+.encadre_information{
+    width: 60%;
+    height: 50%;
+    background-color:rgb(178, 236, 124);
+    display:inline-flex;
+    border-radius: 5px;
+    margin-left: 30%; 
+    overflow: hidden;
+    font-size: small;
+}
+.maj-photo{
+    justify-content: center;
+    display:flex;
+    margin-top: 5%;
+}
+
+.encadre_information p {
+    display:flex;
+    margin: auto;
+    margin-left: 5%;
+}
+
+.boutons{
+    display: flex;
+    justify-content: center;
+    margin-top:3%
+}
+
+.edition {
+    display:inline;
+    
+}

@@ -1,0 +1,100 @@
+[
+    {
+        "sDate_time": "2021-08-28 07:45",
+        "jUser": {
+            "iId": 1,
+            "sName": "Pablo",
+            "sFirstName": "Escobar",
+            "iStar": 5
+        },
+        "sIdRide": "1",
+        "bAllowLuggage": true,
+        "bAllowHandic": false,
+        "bAllowSmoke": false,
+        "iSeats": 4,
+        "bIsOffer": false,
+        "bGoming": true,
+        "bComing": true,
+        "sCity": "Mexico",
+        "sAdmin": false,
+        "sTime": "future",
+        "bAvailable": false,
+        "aSteps": [
+            "Perpignan"
+        ],
+        "sComment": "Je transporte de la drogue de Punta Cana"
+    },
+    {
+        "sDate_time": "2021-01-05 07:05",
+        "jUser": {
+            "iId": 2,
+            "sName": "Macron",
+            "sFirstName": "Pablito",
+            "iStar": 5
+        },
+        "sIdRide": "2",
+        "bAllowLuggage": true,
+        "bAllowHandic": false,
+        "bAllowSmoke": true,
+        "iSeats": 4,
+        "bIsOffer": true,
+        "bGoming": true,
+        "bComing": false,
+        "sCity": "Lunel",
+        "sAdmin": true,
+        "sTime": false,
+        "bAvailable": false,
+        "aSteps": [
+            "Gard",
+            "Rond point de polette",
+            "Action"
+        ],
+        "sComment": "Je suis allergique au chat"
+    },
+    {
+        "sDate_time": "2021-19-03 07:05",
+        "jUser": {
+            "iId": 2,
+            "sName": "Macron",
+            "sFirstName": "Pablito",
+            "iStar": 5
+        },
+        "sIdRide": "3",
+        "bAllowLuggage": true,
+        "bAllowHandic": false,
+        "bAllowSmoke": false,
+        "iSeats": 1,
+        "bIsOffer": true,
+        "bGoming": false,
+        "bComing": true,
+        "sCity": "Juvignac",
+        "sAdmin": false,
+        "sTime": "paste",
+        "bAvailable": false,
+        "aSteps": [],
+        "sComment": "Je peux effectuer ou modifer plusieurs etapes d'arret, venez mp"
+    },
+    {
+        "sDate_time": "2021-19-09 07:35",
+        "jUser": {
+            "iId": 4,
+            "sName": "Myriam",
+            "sFirstName": "Babouche",
+            "iStar": 5
+        },
+        "sIdRide": "4",
+        "bAllowLuggage": true,
+        "bAllowHandic": false,
+        "bAllowSmoke": false,
+        "iSeats": 1,
+        "bIsOffer": true,
+        "bGoming": false,
+        "bComing": true,
+        "sCity": "Sète",
+        "sAdmin": false,
+        "sTime": "0",
+        "bAvailable": true,
+        "aSteps": [],
+        "sComment": "Je ne tolere pas les fumeurs"
+    }
+]

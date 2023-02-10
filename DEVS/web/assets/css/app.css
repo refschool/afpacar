@@ -1,0 +1,116 @@
+:root {
+	--color-blue: 		rgba(0, 170, 255, 1);
+	--color-green:		rgba(127, 194, 65, 1);
+	--color-pink:	 	rgba(227, 0, 126, 1);
+	--color-black:		rgba(35, 31, 32, 1);
+	--color-bootstrap:	rgba(0, 123, 255, 1);
+	--color-main:		  var(--color-green);
+}
+
+html,body{
+    overflow-x: hidden;
+  }
+
+/***************************************
+                 Color
+***************************************/
+.text-blue{
+    color: var(--color-blue);
+}
+.text-green{
+    color: var(--color-green);
+}
+.text-pink{
+    color: var(--color-pink);
+}
+.text-black{
+    color: var(--color-black);
+}
+.text-main{
+    color: var(--color-main);
+}
+
+/***************************************
+            Background-Color
+***************************************/
+.bg-blue {
+	background-color:	var(--color-blue);
+}
+.bg-green {
+	background-color:	var(--color-green);
+}
+.bg-pink {
+	background-color:	var(--color-pink);
+}
+.bg-black {
+	background-color:	var(--color-black);
+}
+.bg-main {
+	background-color:	var(--color-main);
+}
+
+/***************************************
+              Various
+***************************************/
+.op-0 {
+    opacity: 0;
+}
+
+.fullscreen {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.app-modal {
+    position: fixed;
+    z-index: 1000;
+}
+
+/***************************************
+               Loading modal
+***************************************/
+
+#loadingModal {
+    display: none;
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/***************************************
+               Button
+***************************************/
+
+/* Button (enabled) */
+button:not(:disabled):not([disabled]):not(.disabled),
+.button:not(:disabled):not([disabled]):not(.disabled) {
+    cursor: pointer;
+}
+/* Button (disabled) */
+button:disabled, button[disabled], button.disabled,
+.button:disabled, .button[disabled], .button.disabled {
+    opacity: .7;
+}
+/* Anchor in a button */
+button a {
+    color: inherit;
+    text-decoration: inherit;
+}
+/* Anchor in a button (on hover) */
+button a:hover {
+    color: inherit;
+}
+
+
+
+/* ?? */
+
+.hide {
+    display: none;
+}

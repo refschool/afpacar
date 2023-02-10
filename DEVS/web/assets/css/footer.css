@@ -1,0 +1,81 @@
+
+/* *
+* footer
+* */
+
+.logo_afpalab{
+    width: 60px;
+}
+
+.footer {
+    background-color: #7fc241;
+    min-height: 135px;
+}
+
+.logo_facebook {
+    max-width: 80px;
+    max-height: 30px;
+}
+
+
+.logo_twitter {
+    max-width: 80px;
+    max-height: 30px;
+}
+
+
+.logo_youtube {
+    max-width: 90px;
+    max-height: 40px;
+}
+
+
+.logo_linkedin {
+    max-width: 80px;
+    max-height: 30px;
+}
+
+.logo_eloce {
+    max-height: 80px;
+}
+.div_link {
+    /* padding-left: 150px; */
+    margin-bottom: 0;
+}
+
+.div_link a,p:link {
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+    
+}
+/* *
+* footer
+* */
+.contact:hover, .charte:hover, .mentions:hover, .faq:hover
+{
+    font-weight: bold;
+}
+
+.div_link p
+{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:991px)
+{
+    .div_link
+    {
+        margin-bottom:15px;
+    }
+
+    .div_social_network
+    {
+        margin-bottom:15px;
+    }
+
+    .div_eloce
+    {
+        margin-bottom:15px;
+    }
+}

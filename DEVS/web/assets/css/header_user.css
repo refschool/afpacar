@@ -1,0 +1,203 @@
+
+/* *
+* Header Connected Css 
+* */
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   /* margin: 0 !important;
+   padding: 0 !important; */
+  }
+  
+  
+  
+  
+  .acc_adm_cobtn-green{
+    background-color: #7fc241;
+  }
+  .acc_adm_cobtntext-pink{
+    color: #e3007e;
+  }
+  
+  .dropdown button{
+    color: black;
+  }
+  .dropdown button i{
+    font-size: 190%;
+  }
+  
+  .acc_adm_cobtnheaderImg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  
+  }
+  
+  .acc_adm_cobtnlogoheader img{
+    width: 100%;
+    max-width: 130px;
+    min-width: 66px;
+  }
+  
+  .acc_adm_cobtnlogoheader2 img{
+    width: 100%;
+    max-width: 130px;
+    min-width: 66px;
+  }
+
+  .icon-menu
+  {
+    font-size: 40px!important;
+  }
+
+  /* 
+  .headerImg{
+   
+    margin-left: 3%;
+    margin-right: 3%;
+  
+  } */
+  .acc_adm_cobtntopImg{
+    background-color: rgba(255, 255, 255, 0.678);
+    width: 42vw;
+    right: 2vw;
+    height: 100%;
+  }
+  
+  .acc_adm_cotopImg-sm{
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 100%;
+  
+    height: 100%;
+  }
+  
+  .acc_adm_cobtnme-titre{
+    margin-right: 110px;
+  }
+  
+  /* .text-form{
+    margin-left: 100px;
+  } */
+  
+  .acc_adm_cobtnform{
+    margin-left: 59px !important;
+    margin-right: 73px !important;
+    border-radius: 20px;
+  }
+  .acc_adm_cobtntransparent_Content{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+  }
+  
+  .acc_adm_cobtnhide {
+    display: none;
+  }
+  
+  /* *
+  * Header Global Css 
+  * */
+  
+  
+  /* **
+  **  formulaire Thomas
+  ** */
+  /* Inputs */
+  .reg_form_control
+  {
+    margin-bottom: 20px;
+  }
+  
+  .reg_form-control p
+  {
+    text-align: left;
+  }
+  
+  /* Fake Captcha img */
+  .reg_captcha
+  {
+    width: 400px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+  }
+  
+  /* élements à cacher */
+  .reg_hide
+  {
+    display: none;
+  }
+  
+  /* Boutons inscription + connexion */
+  
+  .btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+    color: #fff;
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+  }
+  
+  .btn-check:hover+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+  
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+  }
+  
+  .btn-check:focus+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+  outline: none !important;
+  box-shadow: none !important;   
+  }
+  
+  /* Bouton valider */ 
+  .btn-primary {
+    color: #fff;
+    background-color: #7FC241 !important;
+    border-color: #7FC241 !important;
+  }
+  
+  
+  .btn-primary:hover {
+    background-color: #82ce3c  !important;
+    border-color: #7ec739 !important;
+    outline: #7FC241 !important;
+    box-shadow: 0 0 0 2px #7FC241  !important;
+  }
+  
+  .btn-primary:active {
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+    outline: #7FC241 !important;
+    box-shadow: 0 0 0 2px #7FC241  !important;
+  }
+  
+  .btn-primary:focus {
+    background-color: #7FC241  !important;
+    border-color: #7FC241 !important;
+    outline: #7FC241 !important;
+    box-shadow: 0 0 0 2px black  !important;
+  
+  }
+  /* Gestion des ombres des inputs */
+  .reg_form_control:focus
+  {
+    box-shadow: 0 0 0 2px #7FC241  !important;
+    border-color: #7FC241 !important;
+    outline: #7FC241 !important;
+  }
+  
+  @media only screen and (max-width : 1355px){
+    .acc_adm_cobtntopImg{
+        display: none !important;
+    } 
+  
+    .acc_adm_cobtntitre-resp{
+        display: block !important;
+    }
+  }
+  
+  /* **
+  ** formulaire Thomas
+  ** */
+  
+  
+  

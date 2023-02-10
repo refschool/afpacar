@@ -1,0 +1,725 @@
+  .app_h1
+  {
+      margin: 50px 0;
+      border: 2px solid black;
+      padding: 10px;
+  }
+  
+  .app_h2
+  {
+    margin-bottom: 20px;
+  }
+  
+  /* input (disabled) */ input:disabled, input[disabled], input.disabled, .input:disabled, .input[disabled], .input.disabled {     cursor:no-drop; }
+  
+
+  /***************************** STYLES MYRIAM/LOGAN****************************/
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+  .btn_pink[disabled]{
+    background-color: #dedede !important;
+    border: 2px solid #ccc;
+    color: var(--color-pink);
+  }
+  
+  .btn_pink{
+    background-color: var(--color-white) !important;
+    color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+  }
+  
+  .btn_pink:hover
+  {
+    background-color: var(--color-pink)!important;
+    color: white!important;
+    transition: 1s;
+  }
+  
+  .btn_black[disabled]{
+    background-color: #dedede !important;
+    border: 2px solid #ccc!important;
+    color: var(--color-black);
+  }
+
+  .btn_black{
+    background-color:  var(--color-white) !important;
+    color:var(--color-black) !important;
+    border: 1px solid var(--color-black) !important;
+  }
+  .btn_black:hover{
+    color:white!important;
+    background-color: var(--color-black) !important;
+    transition: 1s;
+  }
+
+  .btn_blue[disabled]{
+    background-color: #dedede !important;
+    border: 2px solid #ccc!important;
+    color: var(--color-blue);
+  }
+
+  .btn_blue{
+    background-color:var(--color-white) !important;
+    color:var(--color-blue)!important;
+    border: solid 1px var(--color-blue)!important;
+  }
+  .btn_blue:hover
+  {
+    background-color: var(--color-blue) !important;
+    color: whitesmoke!important;
+    transition: 1s;
+  }
+
+  .btn_green[disabled]{
+    background-color: #dedede !important;
+    border: 2px solid #ccc!important;
+    color: var(--color-green);
+  }
+  
+  .btn_green{
+    background-color:  var(--color-white) !important;
+    border: solid 1px var(--color-green)!important;
+    color:var(--color-green)!important;
+  }
+  .btn_green:hover{
+    background-color: var(--color-green) !important;
+    color: whitesmoke!important;
+    transition: 1s;
+  }
+
+  
+  /******************************** STYLES ROMAIN/YOUSSEF ********************************/
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  /* .sl_input_select:focus{
+      box-shadow: 2px 2px 2px 2px #4b72279d;
+  }
+  
+  .sl_input_select{
+      border: 2px solid #7fc241;
+      border-radius: 7px;
+      color: #231F20;
+  }
+  
+  .sl_input_select:hover:not([disabled])
+  {
+    box-shadow: 0px 0px 2px 3px rgba(127,194,65,0.9);
+  }
+  
+  .sl_input_select[disabled]
+  {
+    background-color: #dedede;
+    border: 2px solid #ccc;
+  } */
+  
+
+  .input_select_green{
+    border: 2px solid #7fc241;
+    border-radius: 7px;
+    color: #231F20;
+    outline: 0;
+}
+
+.input_select_green:hover:not([disabled])
+{
+  box-shadow: 0px 0px 2px 3px rgba(127,194,65,0.9);
+  cursor: pointer;
+}
+
+.input_select_green:focus{
+    -webkit-box-shadow: 3px 3px 23px -9px rgba(127,194,65,0.81); 
+    box-shadow: 3px 3px 23px -9px rgba(127,194,65,0.81);
+}
+
+.input_select_green:disabled{
+    background-color: #dedede;
+    border: 2px solid #ccc;
+}
+
+.input_select_blue{
+    border: 2px solid #00aaff;
+    border-radius: 7px;
+    color: #231F20;
+    outline: 0;
+}
+
+.input_select_blue:hover:not([disabled])
+{
+  box-shadow: 0px 0px 2px 3px rgba(33,150,243,0.9);
+  cursor: pointer;
+}
+
+.input_select_blue:focus{
+    -webkit-box-shadow: 3px 3px 23px -9px rgba(0,170,255,0.81); 
+    box-shadow: 3px 3px 23px -9px rgba(0,170,255,0.81);
+}
+
+.input_select_blue:disabled{
+    background-color: #dedede;
+    border: 2px solid #ccc;
+}
+
+.input_select_red{
+    border: 2px solid #e3007e;
+    border-radius: 7px;
+    color: #231F20;
+    outline: 0;
+}
+
+.input_select_red:hover:not([disabled])
+{
+  box-shadow: 0px 0px 2px 3px rgba(227,0,126,0.9);
+  cursor: pointer;
+}
+
+.input_select_red:focus{
+    -webkit-box-shadow: 3px 3px 23px -9px rgba(227,0,126,0.81); 
+    box-shadow: 3px 3px 23px -9px rgba(227,0,126,0.81);
+}
+
+.input_select_red:disabled{
+    background-color: #dedede;
+    border: 2px solid #ccc;
+}
+
+.input_select_black{
+    border: 2px solid #231f20;
+    border-radius: 7px;
+    color: #231F20;
+    outline: 0;
+}
+
+.input_select_black:hover:not([disabled])
+{
+  box-shadow: 0px 0px 2px 3px rgba(35,31,32,0.9);
+  cursor: pointer;
+}
+
+.input_select_black:focus{
+    -webkit-box-shadow: 3px 3px 23px -9px rgba(35,31,32,0.81); 
+    box-shadow: 3px 3px 23px -9px rgba(35,31,32,0.81);
+}
+
+
+.input_select_black:disabled{
+    background-color: #dedede;
+    border: 2px solid #ccc;
+}
+  
+  /**************************** STYLES PABLO/ILYES **************************/
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  /* Bouton bleu*/
+  
+  .rd_switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    /* border: 2px solid #ccc;
+    border-radius: 34px; */
+  }
+  
+  .rd_switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .rd_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .rd_slider:hover:not([disabled])
+  {
+    box-shadow: 0px 0px 2px 3px rgba(33,150,243,0.9);
+  }
+  
+  .rd_slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    background-color:  #00aaff;
+  }
+  
+  .rd_slider[disabled]
+  {
+    background-color: #ccc;
+    cursor: auto;
+  }
+  
+  input:checked + .rd_slider 
+  {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .rd_slider 
+  {
+    box-shadow: 0px 0px 2px 3px rgba(33,150,243,0.9);
+    /* box-shadow: 0 0 3px 5px #3a97f9; */
+  }
+  
+  input:checked + .rd_slider:before
+  {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(24px);
+    background-color: white;
+  }
+  
+  /* Rounded rd_sliders */
+  .rd_slider.round 
+  {
+    border-radius: 34px;
+    border: 1px solid #ccc;
+  }
+  
+  .rd_slider.round:before 
+  {
+    border-radius: 50%;
+  }
+  
+  /***************************************************************************************/
+  
+  
+  /* Bouton vert */
+  
+  .rd_switch2 {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    /* border: 2px solid #ccc;
+    border-radius: 34px; */
+  
+  }
+  
+  .rd_switch2 input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  .rd_slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .rd_slider2:hover:not([disabled])
+  {
+    box-shadow: 0px 0px 2px 3px rgba(127,194,65,0.9);
+  
+  }
+  
+  .rd_slider2:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    background-color:  #7fc241;
+  
+  }
+  
+  .rd_slider2[disabled]
+  {
+    background-color: #ccc;
+    cursor: auto;
+  
+  }
+  
+  input:checked + .rd_slider2 {
+    background-color: #7fc241;
+    
+  }
+  
+  input:focus + .rd_slider2 {
+    box-shadow: 0px 0px 2px 3px rgba(127,194,65,0.9);
+  
+    /* border: 1px solid #ccc; */
+  }
+  
+  input:checked + .rd_slider2:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(24px);
+    background-color: white;
+    
+  }
+  
+  /* Rounded rd_sliders */
+  .rd_slider2.round {
+    border-radius: 34px;
+    border: 1px solid #ccc;
+   
+  }
+  
+  .rd_slider2.round:before {
+    border-radius: 50%;
+  }
+  /***************************************************************************************/
+  
+  
+  
+  /* Bouton rose */
+  
+  .rd_switch3 {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  
+  
+  }
+  
+  .rd_switch3 input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  .rd_slider3 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .rd_slider3:hover:not([disabled])
+  {
+    box-shadow: 0px 0px 2px 3px rgba(227,0,126,0.9);
+  }
+  
+  .rd_slider3:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    background-color:  #e3007e;
+  
+  }
+  
+  .rd_slider3[disabled]
+  {
+    background-color: #ccc;
+    cursor: auto;
+  
+  }
+  
+  input:checked + .rd_slider3 {
+    background-color: #e3007e;
+    
+  }
+  
+  input:focus + .rd_slider3 {
+    box-shadow: 0px 0px 2px 3px rgba(227,0,126,0.9);
+  
+    /* border: 1px solid #ccc; */
+  }
+  
+  input:checked + .rd_slider3:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(24px);
+    background-color: white;
+    
+  }
+  
+  /* Rounded rd_sliders */
+  .rd_slider3.round {
+    border-radius: 34px;
+    border: 1px solid #ccc;
+   
+  }
+  
+  .rd_slider3.round:before {
+    border-radius: 50%;
+  }
+  /***************************************************************************************/
+  
+  /* Bouton noir */
+  
+  .rd_switch4 {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  
+  
+  }
+  
+  .rd_switch4 input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  .rd_slider4 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;  
+  }
+  
+  .rd_slider4:hover:not([disabled])
+  {
+    box-shadow: 0px 0px 2px 3px rgba(35,31,32,0.9);
+  
+  }
+  
+  .rd_slider4:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    background-color:  #231f20;
+  
+  }
+  
+  .rd_slider4[disabled]
+  {
+    background-color: #ccc;
+    cursor: auto;
+  
+  }
+  
+  input:checked + .rd_slider4 {
+    background-color: #231f20;
+    
+  }
+  
+  input:focus + .rd_slider4 {
+    box-shadow: 0px 0px 2px 3px rgba(35,31,32,0.9);
+  
+    /* border: 1px solid #ccc; */
+  }
+  
+  input:checked + .rd_slider4:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(24px);
+    background-color: white;
+    
+  }
+  
+  /* Rounded rd_sliders */
+  .rd_slider4.round {
+    border-radius: 34px;
+    border: 1px solid #ccc;
+   
+  }
+  
+  .rd_slider4.round:before {
+    border-radius: 50%;
+  }
+  
+  
+  /****************************** STYLES MAXIME/THOMAS ******************************/
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  /* vert */
+  .comp_form_control_green:focus
+  {
+      box-shadow: 0 0 0 2px #7FC241  !important;
+      border-color: #7FC241 !important;
+      outline: #7FC241 !important;
+  }
+  
+  .comp_form_control_green:not(.not-resize)
+  {
+      width: 50%;
+  }
+  
+  .comp_form_control_green:hover:not([disabled])
+  {
+    box-shadow: 0 0 0 2px #7FC241  !important;
+  }
+/* rose */
+  .comp_form_control_pink:focus
+  {
+      box-shadow: 0 0 0 2px #e3007e  !important;
+      border-color: #e3007e !important;
+      outline: #e3007e !important;
+  }
+  
+  .comp_form_control_pink:not(.not-resize)
+  {
+      width: 50%;
+  }
+  
+  .comp_form_control_pink:hover:not([disabled])
+  {
+    box-shadow: 0 0 0 2px #e3007e  !important;
+  }
+
+  /* bleu */
+  .comp_form_control_blue:focus
+  {
+      box-shadow: 0 0 0 2px #00aaff  !important;
+      border-color: #00aaff !important;
+      outline: #00aaff !important;
+  }
+  
+  .comp_form_control_blue:not(.not-resize)
+  {
+      width: 50%;
+  }
+  
+  .comp_form_control_blue:hover:not([disabled])
+  {
+    box-shadow: 0 0 0 2px #00aaff  !important;
+  }
+
+  /* noir */
+  .comp_form_control_black:focus
+  {
+      box-shadow: 0 0 0 2px #231f20  !important;
+      border-color: #231f20 !important;
+      outline: #231f20 !important;
+  }
+  
+  .comp_form_control_black:not(.not-resize)
+  {
+      width: 50%;
+  }
+  
+  .comp_form_control_black:hover:not([disabled])
+  {
+    box-shadow: 0 0 0 2px #231f20  !important;
+  }
+  
+  /**************************** STYLES ENZO/MATHIEU ******************************/
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  /* .form-check-input:checked */
+  /* #flexCheckDefault
+  {
+    background-color:red!important;
+  
+  } */
+  
+  .comp_input-blue:checked {
+    background-color: #00aaff;
+    border-color: #000000;
+  }
+  
+  .comp_input-blue:hover
+  {
+    box-shadow: 0px 0px 2px 3px rgba(33,150,243,0.9);
+    cursor: pointer;
+  }
+  
+  .comp_input-pink:checked
+  {
+    background-color: #e3007e;
+    border-color: #000000;
+  }
+  
+  .comp_input-pink:hover
+  {
+    box-shadow: 0px 0px 2px 3px rgba(227,0,126,0.9);
+    cursor: pointer;
+  }
+  
+  .comp_input-green:checked
+  {
+    background-color: #7fc241;
+    border-color: #000000;
+  }
+  
+  .comp_input-green:hover
+  {
+    box-shadow: 0px 0px 2px 3px rgba(127,194,65,0.9);
+    cursor: pointer;
+  }
+  
+  .comp_input-dark:checked
+  {
+    background-color: #231f20;
+    border-color: #000000;
+  }
+  
+  .comp_input-dark:hover
+  {
+    box-shadow: 0px 0px 2px 3px rgba(35,31,32,0.9);
+    cursor: pointer;
+  }
+
+  /***************************** DATATABLE LOGAN****************************/
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+  table.acs tbody tr:nth-child(odd):not([disabled]) {
+    background-color: #7FC241!important; 
+}
+
+table.acs tbody tr[disabled] {
+  background-color: #ccc!important; 
+  cursor: not-allowed;
+}
+
+table.acs tbody tr[disabled] *:not(.not-inherit) { 
+  cursor: inherit;
+}
+

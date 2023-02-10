@@ -1,0 +1,352 @@
+<!--    info 
+
+    ♦ From this page will be born yours :) If it is a page that can only
+    be viewed by an admin, its name must start with "adm_" ♦
+    
+ De cette page naîtra la vôtre :) Si c'est une page qui ne peut être
+ consultée  que par un admin, son nom doit commencer par "adm_"
+
+-->
+
+
+<!-- ◘ CSS ◘ -->
+<link rel="stylesheet" href="assets/css/vehicules.css">
+
+<!-- ◘ JS ◘ -->
+<script type="text/javascript" src="assets/js/vehicules.js" defer></script>
+
+
+<div id="section-wrapper" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="haut_de_page">
+                <h1> <span>MES</span> VEHICULES</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            <!-- [--------------------------------------BOUTON AJOUTER------------------------------------] -->
+
+            <button onClick="addVehicule()" type="button" class="btn green premier_btn">Ajouter un véhicule</button>
+        </div>
+        <div id="container_vehicule"></div>
+        <div id="template_vehicule" style="display:none">
+            <div class="row ajout_vehicule">
+
+                <!-- [--------------------------------------MENU CACHER/MONTRER------------------------------------] -->
+
+                <div class="accordion" id="accordionExample_%id_vehicule%">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-car fa-3x"></i>&ensp;
+                                <p1 >Mon véhicule n°<span class="vehicule-numero_%id_vehicule%"></span>  :&ensp; </p1>
+                                <span class="vehicule-user_%id_vehicule% text-pink">&ensp; </span>
+
+                                <!-- [--------------------------------------BOUTON CHOIX COMME VEHICULE PRINCIPAL------------------------------------] -->
+
+                                <div class="form-check form-switch vehicule_principal">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Choisir comme véhicule
+                                        principal</label>
+                                </div>
+
+                            </button>
+                        </h2>
+                        <!-- [--------------------------------------MENU ACCORDEON 1------------------------------------] -->
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row ">
+                                    <div class="alignement_horizontal">
+
+                                        <div class="col-3">
+
+                                            <label for="marque_%id_vehicule%" class="form-label marque">Marque :</label>
+                                            <input type='text' class="form-control voiture marque_voiture" id="marque_%id_vehicule%"
+                                                placeholder="Marque de votre voiture...">
+
+
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="modele_%id_vehicule%" class="form-label marque">Modèle :</label>
+                                            <input class="form-control voiture" id="modele_%id_vehicule%" placeholder="Ex: 206...">
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="color_%id_vehicule%" class="form-label marque">Couleur :</label>
+                                            <input class="form-control voiture" id="color_%id_vehicule%"
+                                                placeholder="Couleur de votre voiture...">
+
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="place_%id_vehicule%" class="form-label marque">Place(s) :</label>
+                                            <input class="form-control voiture" id="place_%id_vehicule%"
+                                                placeholder="Nombre de places disponibles">
+                                        </div>
+                                    </div>
+                                    <div class="trait_gris"></div>
+                                    <div class="row alignement_horizontal">
+                                        <div class="col-8 ">
+                                            <i class="fas fa-copy fa-2x"></i>
+                                            <label for="exampleDataList" class="form-label"><strong>Validité du contrôle
+                                                    technique</strong>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="validity_check_%id_vehicule%">
+                                                    <label class="form-check-label" for="validity_check_%id_vehicule%">
+                                                        Je certifie sur l'honneur la conformité du contrôle technique.
+                                                    </label>
+                                                </div>
+                                            </label>
+
+                                            <div class="trait_gris2"></div>
+                                            <i class="fas fa-exclamation-triangle fa-2x"></i>
+                                            <div class="encadre_information">
+
+                                                <p>En utilisant le service AFPA'CAR je m'engage à avoir un permis et une
+                                                    assurance valide et je déclare sur l'honneur que ce véhicule est en
+                                                    état
+                                                    pour assurer les trajets proposés.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="assets/img/voiture.jpg" class="img-thumbnail img_position"
+                                                alt="..." id="img_vehicule_%id_vehicule%">
+                                            <div class="maj-photo">
+                                                <button type="button" class="btn green">Ajouter / Mettre à jour la
+                                                    photo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="boutons">
+                                    <div class="edition">
+                                        <button onClick="editVehicule(%id_vehicule%)" type="button"
+                                            class="btn btn-dark edition"><i class="fas fa-pen"></i></button>&emsp;
+                                        <button onClick="confirmDeleteVehicule(%id_vehicule%)" type="button"
+                                            class="btn btn-dark edition2"><i class="fas fa-trash"></i></button>
+                                    </div>&emsp;&emsp;
+                                    <button onClick="updateVehicule(%id_vehicule%)" type="button"
+                                        class="btn pink">Enregistrer</button>&emsp;
+                                    <button type="button" class="btn blue">Annuler</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [--------------------------------------FIN DU MENU ACCORDEON 1------------------------------------] -->
+
+
+
+
+                        <div class="modal" tabindex="-1" id="modalSupp">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Supprimer</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close" onclick="$('#modalSupp').hide()"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Etes-vous sûr de vouloir supprimer ce véhicule ?</p>
+                                    </div>
+                                    <input type="hidden" name="id_vehiculo_del_modal" id="id_vehiculo_del_modal">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            onclick="$('#modalSupp').hide()">Retour</button>
+                                        <button type="button" class="btn btn-primary"
+                                            onClick="deleteAdress()">Supprimer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-car fa-3x"></i>&ensp;
+                            Mon véhicule n°2 : <p2>&ensp; (DeLorean - DMC-12)</p2>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row ">
+                                <div class="alignement_horizontal">
+                                    <div class="col-3">
+
+                                        <label for="exampleDataList" class="form-label marque">Marque :</label>
+                                        <input class="form-control voiture" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Marque de votre voiture...">
+
+                                        <datalist id="datalistOptions">
+                                            <option value="Peugeot">
+                                            <option value="Renault">
+                                            <option value="Citroen">
+                                            <option value="BMW">
+                                            <option value="Rover">
+                                        </datalist>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="exampleDataList" class="form-label marque">Modèle :</label>
+                                        <input class="form-control voiture" id="exampleDataList"
+                                            placeholder="Ex: 206...">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="exampleDataList" class="form-label marque">Couleur :</label>
+                                        <input class="form-control voiture" id="exampleDataList"
+                                            placeholder="Couleur de votre voiture...">
+
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="exampleDataList" class="form-label marque">Place(s) :</label>
+                                        <input class="form-control voiture" id="exampleDataList"
+                                            placeholder="Nombre de places disponibles">
+                                    </div>
+                                </div>
+                                <div class="trait_gris"></div>
+                                <div class="row alignement_horizontal">
+                                    <div class="col-8 ">
+                                        <i class="fas fa-copy fa-2x"></i>
+                                        <label for="exampleDataList" class="form-label"><strong>Validité du contrôle
+                                                technique</strong>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Je certifie sur l'honneur la conformité du contrôle technique.
+                                                </label>
+                                            </div>
+                                        </label>
+                                        <div class="trait_gris2"></div>
+                                        <i class="fas fa-exclamation-triangle fa-2x"></i>
+                                        <div class="encadre_information">
+
+                                            <p>En utilisant le service AFPA'CAR je m'engage à avoir un permis et une
+                                                assurance valide et je déclare sur l'honneur que ce véhicule est en état
+                                                pour assurer les trajets proposés.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="/img/voiture.jpg" class="img-thumbnail img_position" alt="...">
+                                        <div class="maj-photo">
+                                            <button type="button" class="btn green">Ajouter / Mettre à jour la
+                                                photo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boutons">
+                                <div class="edition">
+                                    <button type="button" class="btn btn-dark edition"><i
+                                            class="fas fa-pen"></i></button>&emsp;
+                                    <button type="button" class="btn btn-dark edition2"><i
+                                            class="fas fa-trash"></i></button>
+                                </div>&emsp;&emsp;
+                                <button type="button" class="btn pink">Enregistrer</button>&emsp;
+                                <button type="button" class="btn blue">Annuler</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-car fa-3x"></i>&ensp;
+                            Mon véhicule n°3 :<p2>&ensp; (KITT - K2000)</p2>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row ">
+                                <div class="alignement_horizontal">
+                                    <div class="col-3">
+
+                                        <label for="exampleDataList" class="form-label marque">Marque :</label>
+                                        <input class="form-control voiture" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Marque de votre voiture...">
+
+                                        <datalist id="datalistOptions">
+                                            <option value="Peugeot">
+                                            <option value="Renault">
+                                            <option value="Citroen">
+                                            <option value="BMW">
+                                            <option value="Rover">
+                                        </datalist>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="exampleDataList" class="form-label marque">Modèle :</label>
+                                        <input class="form-control voiture" id="exampleDataList"
+                                            placeholder="Ex: 206...">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="exampleDataList" class="form-label marque">Couleur :</label>
+                                        <input class="form-control voiture" id="exampleDataList"
+                                            placeholder="Couleur de votre voiture...">
+
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="exampleDataList" class="form-label marque">Place(s) :</label>
+                                        <input class="form-control voiture" id="exampleDataList"
+                                            placeholder="Nombre de places disponibles">
+                                    </div>
+                                </div>
+                                <div class="trait_gris"></div>
+                                <div class="row alignement_horizontal">
+                                    <div class="col-8 ">
+                                        <i class="fas fa-copy fa-2x"></i>
+                                        <label for="exampleDataList" class="form-label"><strong>Validité du contrôle
+                                                technique</strong>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Je certifie sur l'honneur la conformité du contrôle technique.
+                                                </label>
+                                            </div>
+                                        </label>
+                                        <div class="trait_gris2"></div>
+                                        <i class="fas fa-exclamation-triangle fa-2x"></i>
+                                        <div class="encadre_information">
+
+                                            <p>En utilisant le service AFPA'CAR je m'engage à avoir un permis et une
+                                                assurance valide et je déclare sur l'honneur que ce véhicule est en état
+                                                pour assurer les trajets proposés.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="/img/voiture.jpg" class="img-thumbnail img_position" alt="...">
+                                        <div class="maj-photo">
+                                            <button type="button" class="btn green">Ajouter / Mettre à jour la
+                                                photo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boutons"><div class="edition">
+                                <button type="button" class="btn btn-dark edition"><i
+                                        class="fas fa-pen"></i></button>&emsp;
+                                <button type="button" class="btn btn-dark edition2"><i
+                                        class="fas fa-trash"></i></button>
+                                <button type="button" class="btn pink">Enregistrer</button>&emsp;
+                                <button type="button" class="btn blue">Annuler</button>
+                                
+                                </div>&emsp;&emsp;
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
